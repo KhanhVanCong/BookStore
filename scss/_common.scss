@@ -1,0 +1,193 @@
+$muli: "Muli", sans-serif;
+$merri: "Merriweather", serif;
+$pink-color: rgb(248, 109, 114);
+$pink-dark-color: rgb(246, 60, 67);
+$grey-color: rgb(43, 43, 43);
+$grey-text: rgb(102, 102, 102);
+$grey-light: #666;
+$black-color: rgb(33, 37, 41);
+$dark-gray-color: #afafaf;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $merri;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: $pink-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $muli;
+}
+
+/* COMMON BLOCK */
+.common {
+  &__title {
+    font-family: $merri;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: $black-color;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem !important;
+    padding-left: 1.5rem;
+    text-align: left;
+
+    &--no-margin {
+      margin: 0 !important;
+    }
+
+    &--center,
+    &--center::after {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 7rem;
+      border-top: 2px solid $pink-color;
+    }
+  }
+
+  &__button {
+    color: #fff;
+    background-color: #f86d72;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    box-shadow: 0 13px 29.4px 0.6px rgba(43, 43, 43, 0.25);
+
+    &:hover {
+      background-color: #f63c43;
+      color: #fff;
+      opacity: 1;
+    }
+  }
+}
+
+/* LOADING ANIMATION */
+@mixin circle-box ($size, $time) {
+  content: "";
+  position: absolute;
+  top: $size;
+  left: $size;
+  right: $size;
+  bottom: $size;
+  border: 3px solid transparent;
+  border-top-color: rgba(248, 109, 114, 0.75);
+  border-radius: 50%;
+  animation: cricle-round linear $time infinite;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1.5s;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  &__on-sale {
+    position: relative;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__dot {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f86d72;
+    animation: cricle-round linear 2s infinite;
+
+    &::before {
+      @include circle-box(5px, 3s);
+    }
+
+    &::after {
+      @include circle-box(15px, 1.5s);
+    }
+  }
+}
+
+@keyframes cricle-round {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* BACK TO TOP */
+#back-top {
+  width: 4rem;
+  height: 4rem;
+  background-color: $pink-color;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  position: fixed;
+  z-index: 9999;
+  right: 2rem;
+  bottom: 4rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #f63c43;
+    bottom: 3rem;
+  }
+
+  &--active {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  i {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+}

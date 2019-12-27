@@ -1,0 +1,1924 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Book Stores</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="height=device-height, minimum-scale=1, width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Muli%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C700%2C700i%7CMerriweather%3A300%2C300i%2C400%2C400i%2C700%2C700i%2C900%2C900i%7COpen%2BSans&subset=latin%2Clatin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:700%7CMuli:700%2C600">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="./fonts/elegant-fonts.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!-- LOADING -->
+    <div class="loading loading--active js-loading">
+        <div class="loading__wrapper">
+            <div class="loading__dot">
+            </div>
+        </div>
+    </div>
+    <!-- MOVE TOP -->
+    <button id="back-top">
+        <i class="fa fa-angle-up"></i>
+    </button>
+    <!-- HEADER -->
+    <section id="bs-header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-2 header__brand">
+                    <a href="#">
+                        <img src="./images/logo.png" alt="Logo" class="header__logo">
+                    </a>
+                </div>
+                <div class="navbar-expand-lg col-3 col-md-2 col-lg-8 header__menu" id="header-menu">
+                    <button class="navbar-toggler header__toggler" type="button">
+                        Menu
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="header__close">
+                            <div class="header__close-icon">
+                                <span aria-hidden="true">&times;</span>
+                            </div>
+                        </div>
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#">Shop</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#">Author</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-9 col-xlcol-md-10 col-lg-2 header__users">
+                    <ul class="header__icon-list">
+                        <li class="header__icon-item header__icon-item--flip">
+                            <a href="#">
+                                <i class="icon_search" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="header__icon-item header__icon-item--border header__icon-item--padding-right">
+                            <a href="#">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="header__mini-cart">0</span>
+                            </a>
+                        </li>
+                        <li class="header__icon-item header__icon-item--border header__icon-item--padding-right">
+                            <a href="#">
+                                <i class="icon_bag_alt" aria-hidden="true"></i>
+                                <span class="header__mini-cart">0</span>
+                            </a>
+                        </li>
+                        <li class="header__icon-item header__icon-item--border">
+                            <a href="#">
+                                <i class="fa fa-user-o" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+    <!-- PRODUCTION LIST -->
+    <section id="bs-production-list" class="production">
+        <div class="production__carousel js-production__carousel">
+            <div class="production__container production__container--pink">
+                <div class="production__wrapper">
+                    <div class="production__image">
+                        <a href="#">
+                            <img src="./images/books/cup_cake_1.jpg" alt="Cup-Cake" class="production__image--shadow">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <h4 class="product__name-book"><a href="#" class="product__anchor">Cup Cake Diraes</a></h4>
+                        <div class="product__link-author">by
+                            <span class="product__name-author">
+                                <a href="#" class="product__anchor">Anna Hillton</a>
+                            </span>
+                        </div>
+                        <div class="product__rating">
+                            <span class="product__rating product__rating--rated"></span>
+                        </div>
+                        <div class="product__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco…
+                        </div>
+                        <a href="#" class="product__cart">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="production__container production__container--blue">
+                <div class="production__wrapper">
+                    <div class="production__image">
+                        <a href="#">
+                            <img src="./images/books/cup_cake_2.jpg" alt="Cup-Cake" class="production__image--shadow">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <h4 class="product__name-book"><a href="#" class="product__anchor">maroc 2002</a></h4>
+                        <div class="product__link-author">by
+                            <span class="product__name-author">
+                                <a href="#" class="product__anchor">nicolas sumpir</a>
+                            </span>
+                        </div>
+                        <div class="product__rating">
+                            <span class="product__rating product__rating--rated"></span>
+                        </div>
+                        <div class="product__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco…
+                        </div>
+                        <a href="#" class="product__cart">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="production__container production__container--orange">
+                <div class="production__wrapper">
+                    <div class="production__image">
+                        <a href="#">
+                            <img src="./images/books/delicious_places.jpg" alt="Cup-Cake"
+                                class="production__image--shadow">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <h4 class="product__name-book"><a href="#" class="product__anchor">delicious place</a></h4>
+                        <div class="product__link-author">by
+                            <span class="product__name-author">
+                                <a href="#" class="product__anchor">coco simon</a>
+                            </span>
+                        </div>
+                        <div class="product__rating">
+                            <span class="product__rating product__rating--rated"></span>
+                        </div>
+                        <div class="product__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco…
+                        </div>
+                        <a href="#" class="product__cart">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TYPES BOOK -->
+    <section class="types-book">
+        <div class="js-types-book__carousel container">
+            <div class="types-books__container">
+                <div class="types-book__wrapper">
+                    <div class="types-book__icon">
+                        <i class="fa fa-book"></i>
+                    </div>
+                    <div class="types-book__content">
+                        <div class="types-book__title">
+                            <a href="#">Classic</a>
+                        </div>
+                        <div class="types-book__count">
+                            7 Books
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="types-books__container">
+                <div class="types-book__wrapper">
+                    <div class="types-book__icon">
+                        <i class="fa fa-newspaper-o"></i>
+                    </div>
+                    <div class="types-book__content">
+                        <div class="types-book__title">
+                            <a href="#">Drama</a>
+                        </div>
+                        <div class="types-book__count">
+                            2 Books
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="types-books__container">
+                <div class="types-book__wrapper">
+                    <div class="types-book__icon">
+                        <i class="fa fa-cube"></i>
+                    </div>
+                    <div class="types-book__content">
+                        <div class="types-book__title">
+                            <a href="#">For Kid</a>
+                        </div>
+                        <div class="types-book__count">
+                            6 Books
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="types-books__container">
+                <div class="types-book__wrapper">
+                    <div class="types-book__icon">
+                        <i class="fa fa-eercast"></i>
+                    </div>
+                    <div class="types-book__content">
+                        <div class="types-book__title">
+                            <a href="#">Horror</a>
+                        </div>
+                        <div class="types-book__count">
+                            16 Books
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="types-books__container">
+                <div class="types-book__wrapper">
+                    <div class="types-book__icon">
+                        <i class="fa fa-heart-o"></i>
+                    </div>
+                    <div class="types-book__content">
+                        <div class="types-book__title">
+                            <a href="#">Loved</a>
+                        </div>
+                        <div class="types-book__count">
+                            1 Books
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- NEW ARRIVALS & AUTHOR -->
+    <section class="new-arrivals-author">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-10 new-arrivals">
+                    <div class="common__title">
+                        New arrivals
+                    </div>
+                    <div class="new-arrivals__carousel js-new-arrivals__carousel">
+                        <div class="new-arrivals__container">
+                            <div class="new-arrivals__wrapper">
+                                <div class="new-arrivals__books books">
+                                    <div class="new-arrivals__thumb-wrapper books__thumb">
+                                        <div class="new-arrivals__thumb books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/cup_cake_1.jpg" alt="cup-cake-diraes">
+                                            </a>
+                                        </div>
+                                        <div class="new-arrivals__thumb books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/cup_cake_2.jpg" alt="marooc">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__cart">
+                                                <i class="icon_cart_alt"></i>
+                                            </a>
+                                            <a href="#" class="books__quick-view">
+                                                <i class='icon_search'></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="books__details">
+                                        <a href="#" class="books__title">Cup Cake diraes</a>
+                                        <div class="books__author">
+                                            by <a href="#" class="books__author--hover">Anna hillton</a>
+                                        </div>
+                                        <div class="books__price">$20.5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-arrivals__wrapper">
+                                <div class="new-arrivals__books books">
+                                    <div class="new-arrivals__thumb-wrapper books__thumb">
+                                        <div class="new-arrivals__thumb books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/cup_cake_2.jpg" alt="cup_cake_2">
+                                            </a>
+                                        </div>
+                                        <div class="new-arrivals__thumb books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/one_year_one_a_bike.jpg" alt="one-year">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__cart">
+                                                <i class="icon_cart_alt"></i>
+                                            </a>
+                                            <a href="#" class="books__quick-view">
+                                                <i class="icon_search"></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="books__details">
+                                        <a href="#" class="books__title">maroc 2002</a>
+                                        <div class="books__author">
+                                            by <a href="#" class="books__author--hover">nicolas sumpir</a>
+                                        </div>
+                                        <div class="books__price">$115.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-arrivals__container">
+                            <div class="new-arrivals__wrapper">
+                                <div class="new-arrivals__books books">
+                                    <div class="new-arrivals__thumb-wrapper books__thumb">
+                                        <div class="new-arrivals__thumb books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/delicious_places.jpg" alt="delicioous-place">
+                                            </a>
+                                        </div>
+                                        <div class="new-arrivals__thumb books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/one_year_one_a_bike.jpg" alt="one-year">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__cart">
+                                                <i class="icon_cart_alt"></i>
+                                            </a>
+                                            <a href="#" class="books__quick-view">
+                                                <i class="icon_search"></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="books__details">
+                                        <a href="#" class="books__title">Delicious place</a>
+                                        <div class="books__author">
+                                            by <a href="#" class="books__author--hover">Coco Simon</a>
+                                        </div>
+                                        <div class="books__price">$205.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-arrivals__wrapper">
+                                <div class="new-arrivals__books books">
+                                    <div class="new-arrivals__thumb-wrapper books__thumb">
+                                        <div class="new-arrivals__thumb books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/one_year_one_a_bike.jpg"
+                                                    alt="one_year_one_a_bike">
+                                            </a>
+                                        </div>
+                                        <div class="new-arrivals__thumb books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/the_still_life.jpg" alt="the_still_life">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__cart">
+                                                <i class="icon_cart_alt"></i>
+                                            </a>
+                                            <a href="#" class="books__quick-view">
+                                                <i class="icon_search"></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="books__details">
+                                        <a href="#" class="books__title">One year one a bike</a>
+                                        <div class="books__author">
+                                            by <a href="#" class="books__author--hover">susan merrlin</a>
+                                        </div>
+                                        <div class="books__price">$67.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-arrivals__container">
+                            <div class="new-arrivals__wrapper">
+                                <div class="new-arrivals__books books">
+                                    <div class="new-arrivals__thumb-wrapper books__thumb">
+                                        <div class="new-arrivals__thumb books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/the_still_life.jpg" alt="the-still-life">
+                                            </a>
+                                        </div>
+                                        <div class="new-arrivals__thumb books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/100_selected_poem.jpg" alt="100_selected_poem">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__cart">
+                                                <i class="icon_cart_alt"></i>
+                                            </a>
+                                            <a href="#" class="books__quick-view">
+                                                <i class="icon_search"></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="books__details">
+                                        <a href="#" class="books__title">the still life</a>
+                                        <div class="books__author">
+                                            by <a href="#" class="books__author--hover">sabela hupter</a>
+                                        </div>
+                                        <div class="books__price">$78.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-arrivals__wrapper">
+                                <div class="new-arrivals__books books">
+                                    <div class="new-arrivals__thumb-wrapper books__thumb">
+                                        <div class="new-arrivals__thumb books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/100_selected_poem.jpg" alt="100_selected_poem">
+                                            </a>
+                                        </div>
+                                        <div class="new-arrivals__thumb books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/surf_odyssey.jpg" alt="surf_odyssey">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__cart">
+                                                <i class="icon_cart_alt"></i>
+                                            </a>
+                                            <a href="#" class="books__quick-view">
+                                                <i class="icon_search"></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="books__details">
+                                        <a href="#" class="books__title">Delicious place</a>
+                                        <div class="books__author">
+                                            by <a href="#" class="books__author--hover">Coco Simon</a>
+                                        </div>
+                                        <div class="books__price">$205.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-arrivals__container">
+                            <div class="new-arrivals__wrapper">
+                                <div class="new-arrivals__books books">
+                                    <div class="new-arrivals__thumb-wrapper books__thumb">
+                                        <div class="new-arrivals__thumb books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/surf_odyssey.jpg" alt="surf_odyssey">
+                                            </a>
+                                        </div>
+                                        <div class="new-arrivals__thumb books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/animal_farm.jpg" alt="animal_farm">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__cart">
+                                                <i class="icon_cart_alt"></i>
+                                            </a>
+                                            <a href="#" class="books__quick-view">
+                                                <i class="icon_search"></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="books__details">
+                                        <a href="#" class="books__title">surf odyssey</a>
+                                        <div class="books__author">
+                                            by <a href="#" class="books__author--hover">Coco Simon</a>
+                                        </div>
+                                        <div class="books__price">$70.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-arrivals__wrapper">
+                                <div class="new-arrivals__books books">
+                                    <div class="new-arrivals__thumb-wrapper books__thumb">
+                                        <div class="new-arrivals__thumb books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/animal_farm.jpg" alt="animal_farm">
+                                            </a>
+                                        </div>
+                                        <div class="new-arrivals__thumb books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/sad_eyes_and_brave_hearts.jpg"
+                                                    alt="sad_eyes_and_brave_hearts">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__cart">
+                                                <i class="icon_cart_alt"></i>
+                                            </a>
+                                            <a href="#" class="books__quick-view">
+                                                <i class="icon_search"></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="books__details">
+                                        <a href="#" class="books__title">animal farm</a>
+                                        <div class="books__author">
+                                            by <a href="#" class="books__author--hover">anna hilltons</a>
+                                        </div>
+                                        <div class="books__price">$98.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-arrivals__container">
+                            <div class="new-arrivals__wrapper">
+                                <div class="new-arrivals__books books">
+                                    <div class="new-arrivals__thumb-wrapper books__thumb">
+                                        <div class="new-arrivals__thumb books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/sad_eyes_and_brave_hearts.jpg"
+                                                    alt="sad_eyes_and_brave_hearts">
+                                            </a>
+                                        </div>
+                                        <div class="new-arrivals__thumb books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/life_you_are_being_fair.jpg"
+                                                    alt="life_you_are_being_fair">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__cart">
+                                                <i class="icon_cart_alt"></i>
+                                            </a>
+                                            <a href="#" class="books__quick-view">
+                                                <i class="icon_search"></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="books__details">
+                                        <a href="#" class="books__title">brave heart</a>
+                                        <div class="books__author">
+                                            by <a href="#" class="books__author--hover">Sabela hupter</a>
+                                        </div>
+                                        <div class="books__price">$24.00 - $30.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-arrivals__wrapper">
+                                <div class="new-arrivals__books books">
+                                    <div class="new-arrivals__thumb-wrapper books__thumb">
+                                        <div class="new-arrivals__thumb books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/life_you_are_being_fair.jpg"
+                                                    alt="life_you_are_being_fair">
+                                            </a>
+                                        </div>
+                                        <div class="new-arrivals__thumb books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/fashion_fally.jpg" alt="fashion_fally">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__cart">
+                                                <i class="icon_cart_alt"></i>
+                                            </a>
+                                            <a href="#" class="books__quick-view">
+                                                <i class="icon_search"></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="books__details">
+                                        <a href="#" class="books__title">Delicious place</a>
+                                        <div class="books__author">
+                                            by <a href="#" class="books__author--hover">Coco Simon</a>
+                                        </div>
+                                        <div class="books__price">$205.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 author">
+                    <div class="common__title">
+                        Author
+                    </div>
+                    <div class="author__carousel js-author__carousel">
+                        <div class="author__container">
+                            <div class="author__warpper">
+                                <div class="author_thumb">
+                                    <a href="#">
+                                        <img src="./images/authors/our-team3.jpg" alt="davis">
+                                    </a>
+                                </div>
+                                <div class="author__name">
+                                    davis orchari
+                                </div>
+                                <div class="author__major">
+                                    art, drama, novel, writer
+                                </div>
+                                <div class="author__description">
+                                    Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,
+                                    nec sagittis sem nibh id elit. Duis sed odio sit amet nibhroin gravida nibh vel
+                                    velit auctor aliquet.
+                                    Aenean sollicitudin,...
+                                </div>
+                                <div class="author__socials">
+                                    <a href="#">
+                                        <i class="fa fa-facebook author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-twitter author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-instagram author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="author__container">
+                            <div class="author__warpper">
+                                <div class="author_thumb">
+                                    <a href="#">
+                                        <img src="./images/authors/our-team2.jpg" alt="rose">
+                                    </a>
+                                </div>
+                                <div class="author__name">
+                                    rose molahi
+                                </div>
+                                <div class="author__major">
+                                    art, drama, novel, writer
+                                </div>
+                                <div class="author__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tincidunt libero.
+                                    Maecenas et imperdiet augue. Duis ullamcorper venenatis lobortis.
+                                    Aenean pellentesque nisi at tincidunt dignissim. Donec turpis odio,
+                                    feugiat at lacus ut, ultricies consectetur diam. Sed finibus varius...
+                                </div>
+                                <div class="author__socials">
+                                    <a href="#">
+                                        <i class="fa fa-facebook author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-twitter author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-instagram author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="author__container">
+                            <div class="author__warpper">
+                                <div class="author_thumb">
+                                    <a href="#">
+                                        <img src="./images/authors/our-team4.jpg" alt="william">
+                                    </a>
+                                </div>
+                                <div class="author__name">
+                                    william hose
+                                </div>
+                                <div class="author__major">
+                                    art, drama, novel, writer
+                                </div>
+                                <div class="author__description">
+                                    Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,
+                                    nec sagittis sem nibh id elit. Duis sed odio sit amet nibhroin gravida nibh vel
+                                    velit auctor aliquet.
+                                    Aenean sollicitudin,...
+                                </div>
+                                <div class="author__socials">
+                                    <a href="#">
+                                        <i class="fa fa-facebook author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-twitter author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-instagram author__socials--medium" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURED -->
+    <section class="featured">
+        <div class="container">
+            <div class="common__title common__title--center">
+                Featured
+            </div>
+            <div class="featured__carousel js-featured__carousel">
+                <div class="featured__container">
+                    <div class="featured__wrapper">
+                        <div class="featured__books books">
+                            <div class="featured__thumb-wrapper books__thumb">
+                                <div class="featured__thumb books__thumb--front">
+                                    <a href="http://google.com" target="_blank">
+                                        <img src="./images/books/castle_in_the_sky.jpg" alt="castle_in_the_sky">
+                                    </a>
+                                </div>
+                                <div class="featured__thumb books__thumb--behind">
+                                    <a href="http://google.com" target="_blank">
+                                        <img src="./images/books/fashion_fally.jpg" alt="fashion_fally">
+                                    </a>
+                                </div>
+                                <div class="books__modules">
+                                    <a href="#" class="books__cart">
+                                        <i class="icon_cart_alt"></i>
+                                    </a>
+                                    <a href="#" class="books__quick-view">
+                                        <i class='icon_search'></i>
+                                    </a>
+                                    <a href="#" class="books__wish-list">
+                                        <i class="icon_heart_alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="books__details">
+                                <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                                    sky</a>
+                                <div class="books__author">
+                                    by <a href="#" class="books__author--hover">hayao miyazaki</a>
+                                </div>
+                                <div class="books__price">$20.5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured__container">
+                    <div class="featured__wrapper">
+                        <div class="featured__books books">
+                            <div class="featured__thumb-wrapper books__thumb">
+                                <div class="featured__thumb books__thumb--front">
+                                    <a href="#">
+                                        <img src="./images/books/a_thousand_seed.jpg" alt="a_thousand_seed">
+                                    </a>
+                                </div>
+                                <div class="featured__thumb books__thumb--behind">
+                                    <a href="#">
+                                        <img src="./images/books/one_year_one_a_bike.jpg" alt="one-year">
+                                    </a>
+                                </div>
+                                <div class="books__modules">
+                                    <a href="#" class="books__cart">
+                                        <i class="icon_cart_alt"></i>
+                                    </a>
+                                    <a href="#" class="books__quick-view">
+                                        <i class="icon_search"></i>
+                                    </a>
+                                    <a href="#" class="books__wish-list">
+                                        <i class="icon_heart_alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="books__details">
+                                <a href="#" class="books__title">a thousand seed</a>
+                                <div class="books__author">
+                                    by <a href="#" class="books__author--hover">Sabela hupter</a>
+                                </div>
+                                <div class="books__price">$20.30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured__container">
+                    <div class="featured__wrapper">
+                        <div class="featured__books books">
+                            <div class="featured__thumb-wrapper books__thumb">
+                                <div class="featured__thumb books__thumb--front">
+                                    <a href="#">
+                                        <img src="./images/books/the_still_life.jpg" alt="the-still-life">
+                                    </a>
+                                </div>
+                                <div class="featured__thumb books__thumb--behind">
+                                    <a href="#">
+                                        <img src="./images/books/100_selected_poem.jpg" alt="100_selected_poem">
+                                    </a>
+                                </div>
+                                <div class="books__modules">
+                                    <a href="#" class="books__cart">
+                                        <i class="icon_cart_alt"></i>
+                                    </a>
+                                    <a href="#" class="books__quick-view">
+                                        <i class="icon_search"></i>
+                                    </a>
+                                    <a href="#" class="books__wish-list">
+                                        <i class="icon_heart_alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="books__details">
+                                <a href="#" class="books__title">the still life</a>
+                                <div class="books__author">
+                                    by <a href="#" class="books__author--hover">sabela hupter</a>
+                                </div>
+                                <div class="books__price">$78.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured__container">
+                    <div class="featured__wrapper">
+                        <div class="featured__books books">
+                            <div class="featured__thumb-wrapper books__thumb">
+                                <div class="featured__thumb books__thumb--front">
+                                    <a href="#">
+                                        <img src="./images/books/surf_odyssey.jpg" alt="surf_odyssey">
+                                    </a>
+                                </div>
+                                <div class="featured__thumb books__thumb--behind">
+                                    <a href="#">
+                                        <img src="./images/books/animal_farm.jpg" alt="animal_farm">
+                                    </a>
+                                </div>
+                                <div class="books__modules">
+                                    <a href="#" class="books__cart">
+                                        <i class="icon_cart_alt"></i>
+                                    </a>
+                                    <a href="#" class="books__quick-view">
+                                        <i class="icon_search"></i>
+                                    </a>
+                                    <a href="#" class="books__wish-list">
+                                        <i class="icon_heart_alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="books__details">
+                                <a href="#" class="books__title">surf odyssey</a>
+                                <div class="books__author">
+                                    by <a href="#" class="books__author--hover">Coco Simon</a>
+                                </div>
+                                <div class="books__price">$70.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured__container">
+                    <div class="featured__wrapper">
+                        <div class="featured__books books">
+                            <div class="featured__thumb-wrapper books__thumb">
+                                <div class="featured__thumb books__thumb--front">
+                                    <a href="#">
+                                        <img src="./images/books/broken_silence.jpg" alt="broken_silence">
+                                    </a>
+                                </div>
+                                <div class="featured__thumb books__thumb--behind">
+                                    <a href="#">
+                                        <img src="./images/books/life_you_are_being_fair.jpg"
+                                            alt="life_you_are_being_fair">
+                                    </a>
+                                </div>
+                                <div class="books__modules">
+                                    <a href="#" class="books__cart">
+                                        <i class="icon_cart_alt"></i>
+                                    </a>
+                                    <a href="#" class="books__quick-view">
+                                        <i class="icon_search"></i>
+                                    </a>
+                                    <a href="#" class="books__wish-list">
+                                        <i class="icon_heart_alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="books__details">
+                                <a href="#" class="books__title">broken slience</a>
+                                <div class="books__author">
+                                    by <a href="#" class="books__author--hover">anna hilltons</a>
+                                </div>
+                                <div class="books__price">$287.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EVENTS -->
+    <section class="events">
+        <div class="events__container">
+            <div class="events__title">
+                special event in November
+            </div>
+            <div class="events__detail">
+                Best-Selling book exhibition,
+                discount up to 50%
+            </div>
+            <a href="#" class="common__button">explore now</a>
+        </div>
+    </section>
+    <!-- BEST AUTHOR OF WEEK -->
+    <section class="best-author">
+        <div class="container">
+            <div class="common__title common__title--center">
+                Best Author of The Week
+            </div>
+            <div class="best-author__content row">
+                <div class="col-lg-4 d-flex align-items-center justify-content-md-center">
+                    <div>
+                        <div class="best-author__awards">
+                            <p>Awards Author:</p>
+                            <img src="./images/awards/best1.png" alt="best_seller" class="best-author__titles">
+                            <img src="./images/awards/best2.png" alt="best_author" class="best-author__titles">
+                            <img src="./images/awards/best3.png" alt="best_of_the_week" class="best-author__titles">
+                        </div>
+                        <div class="best-author__explore"><a href="#" class="common__button">view book</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="best-author__avatar"><img src="./images/banner1-2.jpg" alt="avatar"></a>
+                </div>
+                <div class="best-author__detail col-lg-4">
+                    <blockquote>
+                        <p>” My books are marked down because most of them are marked with a on the edge by publisher.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elion non porttitor est ”</p>
+                        <h3 class="best-author__name">Marissa Meyer</h3>
+                    </blockquote>
+                    <div class="best-author__social">
+                        <a href="#" class="best-author__link">
+                            <i class="social_facebook"></i>
+                        </a>
+                        <a href="#" class="best-author__link">
+                            <i class="social_twitter"></i>
+                        </a>
+                        <a href="#" class="best-author__link">
+                            <i class="social_googleplus"></i>
+                        </a>
+                        <a href="#" class="best-author__link">
+                            <i class="social_instagram"></i>
+                        </a>
+                        <a href="#" class="best-author__link">
+                            <i class="social_linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ONSALE -->
+    <section class="sale">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-lg-2">
+                    <div class="common__title common__title--no-margin">
+                        On Sale
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10 ">
+                    <ul class="sale_book-list">
+                        <li class="sale__book-type"><a href="#" class="sale__book-link sale__book-link--active">All</a>
+                        </li>
+                        <li class="sale__book-type"><a href="#" class="sale__book-link">Business</a></li>
+                        <li class="sale__book-type"><a href="#" class="sale__book-link">Classic</a></li>
+                        <li class="sale__book-type"><a href="#" class="sale__book-link">Drama</a></li>
+                        <li class="sale__book-type"><a href="#" class="sale__book-link">For Kid</a></li>
+                        <li class="sale__book-type"><a href="#" class="sale__book-link">Horror</a></li>
+                        <li class="sale__book-type"><a href="#" class="sale__book-link">Loved</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="loading">
+                    <div class="loading__wrapper">
+                        <div class="loadding__dot">
+                        </div>
+                    </div>
+                </div>
+                <div class="sale__carousel js-sale__carousel">
+                    <div class="production__container production__container--padding">
+                        <div class="production__block">
+                            <div class="production__wrapper production__wrapper--white books">
+                                <div class="production__image production__image--small ">
+                                    <div class="books__thumb books__thumb--dark-shadow">
+                                        <div class="books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/art_fashion.jpg" alt="castle_in_the_sky">
+                                            </a>
+                                        </div>
+                                        <div class="books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/surf_odyssey.jpg" alt="fashion_fally">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__quick-view">
+                                                <i class='icon_search'></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info product__info--small">
+                                    <h4 class="product__name-book product__name-book--small"><a href="#"
+                                            class="product__anchor">Art Fashion</a>
+                                    </h4>
+                                    <div class="product__link-author product__link-author--small">by
+                                        <span class="product__name-author product__name-author--small">
+                                            <a href="#" class="product__anchor">Sabela Hupter</a>
+                                        </span>
+                                    </div>
+                                    <div class="product__rating product__rating--small product__rating--brown">
+                                        <span
+                                            class="product__rating product__rating--rated product__rating--rated-small product__rating--rated--yellow"></span>
+                                    </div>
+                                    <div class="product__price">
+                                        $815.00
+                                    </div>
+                                    <a href="#" class="product__cart product__cart--small">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="production__block">
+                            <div class="production__wrapper production__wrapper--white books">
+                                <div class="production__image production__image--small ">
+                                    <div class="books__thumb books__thumb--dark-shadow">
+                                        <div class="books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/cup_cake_2.jpg" alt="castle_in_the_sky">
+                                            </a>
+                                        </div>
+                                        <div class="books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/africa_rising.jpg" alt="fashion_fally">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__quick-view">
+                                                <i class='icon_search'></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info product__info--small">
+                                    <h4 class="product__name-book product__name-book--small"><a href="#"
+                                            class="product__anchor">Maroc</a>
+                                    </h4>
+                                    <div class="product__link-author product__link-author--small">by
+                                        <span class="product__name-author product__name-author--small">
+                                            <a href="#" class="product__anchor">Nicolas Sumpir</a>
+                                        </span>
+                                    </div>
+                                    <div class="product__rating product__rating--small product__rating--brown">
+                                        <span
+                                            class="product__rating product__rating--rated product__rating--rated-small product__rating--rated--yellow"></span>
+                                    </div>
+                                    <div class="product__price">
+                                        $115.00
+                                    </div>
+                                    <a href="#" class="product__cart product__cart--small">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="production__container production__container--padding">
+                        <div class="production__block">
+                            <div class="production__wrapper production__wrapper--white books">
+                                <div class="production__image production__image--small ">
+                                    <div class="books__thumb books__thumb--dark-shadow">
+                                        <div class="books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/africa_rising.jpg" alt="castle_in_the_sky">
+                                            </a>
+                                        </div>
+                                        <div class="books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/fashion_fally.jpg" alt="fashion_fally">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__quick-view">
+                                                <i class='icon_search'></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info product__info--small">
+                                    <h4 class="product__name-book product__name-book--small"><a href="#"
+                                            class="product__anchor">Africa Rising</a>
+                                    </h4>
+                                    <div class="product__link-author product__link-author--small">by
+                                        <span class="product__name-author product__name-author--small">
+                                            <a href="#" class="product__anchor">Gestalten</a>
+                                        </span>
+                                    </div>
+                                    <div class="product__rating product__rating--small product__rating--brown">
+                                        <span
+                                            class="product__rating product__rating--rated product__rating--rated-small product__rating--rated--yellow"></span>
+                                    </div>
+                                    <div class="product__price">
+                                        $105.00
+                                    </div>
+                                    <a href="#" class="product__cart product__cart--small">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="production__block">
+                            <div class="production__wrapper production__wrapper--white books">
+                                <div class="production__image production__image--small ">
+                                    <div class="books__thumb books__thumb--dark-shadow">
+                                        <div class="books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/broken_silence.jpg" alt="castle_in_the_sky">
+                                            </a>
+                                        </div>
+                                        <div class="books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/the_still_life.jpg" alt="fashion_fally">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__quick-view">
+                                                <i class='icon_search'></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info product__info--small">
+                                    <h4 class="product__name-book product__name-book--small"><a href="#"
+                                            class="product__anchor">Broken silence</a>
+                                    </h4>
+                                    <div class="product__link-author product__link-author--small">by
+                                        <span class="product__name-author product__name-author--small">
+                                            <a href="#" class="product__anchor">Natasha Preston</a>
+                                        </span>
+                                    </div>
+                                    <div class="product__rating product__rating--small product__rating--brown">
+                                        <span
+                                            class="product__rating product__rating--rated product__rating--rated-small product__rating--rated--yellow"></span>
+                                    </div>
+                                    <div class="product__price">
+                                        $305.00
+                                    </div>
+                                    <a href="#" class="product__cart product__cart--small">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="production__container production__container--padding">
+                        <div class="production__block">
+                            <div class="production__wrapper production__wrapper--white books">
+                                <div class="production__image production__image--small ">
+                                    <div class="books__thumb books__thumb--dark-shadow">
+                                        <div class="books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/onece_upon_a_reunion.jpg"
+                                                    alt="castle_in_the_sky">
+                                            </a>
+                                        </div>
+                                        <div class="books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/sad_eyes_and_brave_hearts.jpg"
+                                                    alt="fashion_fally">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__quick-view">
+                                                <i class='icon_search'></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info product__info--small">
+                                    <h4 class="product__name-book product__name-book--small"><a href="#"
+                                            class="product__anchor">Once Upon a Reunion</a>
+                                    </h4>
+                                    <div class="product__link-author product__link-author--small">by
+                                        <span class="product__name-author product__name-author--small">
+                                            <a href="#" class="product__anchor">Nithya Sashi</a>
+                                        </span>
+                                    </div>
+                                    <div class="product__rating product__rating--small product__rating--brown">
+                                        <span
+                                            class="product__rating product__rating--rated product__rating--rated-small product__rating--rated--yellow"></span>
+                                    </div>
+                                    <div class="product__price">
+                                        $110.00
+                                    </div>
+                                    <a href="#" class="product__cart product__cart--small">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="production__block">
+                            <div class="production__wrapper production__wrapper--white books">
+                                <div class="production__image production__image--small ">
+                                    <div class="books__thumb books__thumb--dark-shadow">
+                                        <div class="books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/the-cross_over.jpg" alt="castle_in_the_sky">
+                                            </a>
+                                        </div>
+                                        <div class="books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/the_still_life.jpg" alt="fashion_fally">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__quick-view">
+                                                <i class='icon_search'></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info product__info--small">
+                                    <h4 class="product__name-book product__name-book--small"><a href="#"
+                                            class="product__anchor">The crossover</a>
+                                    </h4>
+                                    <div class="product__link-author product__link-author--small">by
+                                        <span class="product__name-author product__name-author--small">
+                                            <a href="#" class="product__anchor">Kwame Alexander</a>
+                                        </span>
+                                    </div>
+                                    <div class="product__rating product__rating--small product__rating--brown">
+                                        <span
+                                            class="product__rating product__rating--rated product__rating--rated-small product__rating--rated--yellow"></span>
+                                    </div>
+                                    <div class="product__price">
+                                        $6.49
+                                    </div>
+                                    <a href="#" class="product__cart product__cart--small">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="production__container production__container--padding">
+                        <div class="production__block">
+                            <div class="production__wrapper production__wrapper--white books">
+                                <div class="production__image production__image--small ">
+                                    <div class="books__thumb books__thumb--dark-shadow">
+                                        <div class="books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/life_you_are_being_fair.jpg"
+                                                    alt="castle_in_the_sky">
+                                            </a>
+                                        </div>
+                                        <div class="books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/100_selected_poem.jpg" alt="fashion_fally">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__quick-view">
+                                                <i class='icon_search'></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info product__info--small">
+                                    <h4 class="product__name-book product__name-book--small"><a href="#"
+                                            class="product__anchor">life you are not being fair</a>
+                                    </h4>
+                                    <div class="product__link-author product__link-author--small">by
+                                        <span class="product__name-author product__name-author--small">
+                                            <a href="#" class="product__anchor">Sandeep Sharma</a>
+                                        </span>
+                                    </div>
+                                    <div class="product__rating product__rating--small product__rating--brown">
+                                        <span
+                                            class="product__rating product__rating--rated product__rating--rated-small product__rating--rated--yellow"></span>
+                                    </div>
+                                    <div class="product__price">
+                                        $49.00
+                                    </div>
+                                    <a href="#" class="product__cart product__cart--small">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="production__block">
+                            <div class="production__wrapper production__wrapper--white books">
+                                <div class="production__image production__image--small ">
+                                    <div class="books__thumb books__thumb--dark-shadow">
+                                        <div class="books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/a_thousand_seed.jpg" alt="castle_in_the_sky">
+                                            </a>
+                                        </div>
+                                        <div class="books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/fashion_fally.jpg" alt="fashion_fally">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__quick-view">
+                                                <i class='icon_search'></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info product__info--small">
+                                    <h4 class="product__name-book product__name-book--small"><a href="#"
+                                            class="product__anchor" title="A thousand seeds of joy">A thousand seeds of
+                                            joy</a>
+                                    </h4>
+                                    <div class="product__link-author product__link-author--small">by
+                                        <span class="product__name-author product__name-author--small">
+                                            <a href="#" class="product__anchor">Ananda Karunesh</a>
+                                        </span>
+                                    </div>
+                                    <div class="product__rating product__rating--small product__rating--brown">
+                                        <span
+                                            class="product__rating product__rating--rated product__rating--rated-small product__rating--rated--yellow"></span>
+                                    </div>
+                                    <div class="product__price">
+                                        $155.00
+                                    </div>
+                                    <a href="#" class="product__cart product__cart--small">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="production__container production__container--padding">
+                        <div class="production__block">
+                            <div class="production__wrapper production__wrapper--white books">
+                                <div class="production__image production__image--small ">
+                                    <div class="books__thumb books__thumb--dark-shadow">
+                                        <div class="books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/delicious_places.jpg" alt="castle_in_the_sky">
+                                            </a>
+                                        </div>
+                                        <div class="books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/the-cross_over.jpg" alt="fashion_fally">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__quick-view">
+                                                <i class='icon_search'></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info product__info--small">
+                                    <h4 class="product__name-book product__name-book--small"><a href="#"
+                                            class="product__anchor">delicious places</a>
+                                    </h4>
+                                    <div class="product__link-author product__link-author--small">by
+                                        <span class="product__name-author product__name-author--small">
+                                            <a href="#" class="product__anchor">Gestalten</a>
+                                        </span>
+                                    </div>
+                                    <div class="product__rating product__rating--small product__rating--brown">
+                                        <span
+                                            class="product__rating product__rating--rated product__rating--rated-small product__rating--rated--yellow"></span>
+                                    </div>
+                                    <div class="product__price">
+                                        $89.00
+                                    </div>
+                                    <a href="#" class="product__cart product__cart--small">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="production__block">
+                            <div class="production__wrapper production__wrapper--white books">
+                                <div class="production__image production__image--small ">
+                                    <div class="books__thumb books__thumb--dark-shadow">
+                                        <div class="books__thumb--front">
+                                            <a href="#">
+                                                <img src="./images/books/fashion_fally.jpg" alt="castle_in_the_sky">
+                                            </a>
+                                        </div>
+                                        <div class="books__thumb--behind">
+                                            <a href="#">
+                                                <img src="./images/books/insprision_speaker.jpg" alt="fashion_fally">
+                                            </a>
+                                        </div>
+                                        <div class="books__modules">
+                                            <a href="#" class="books__quick-view">
+                                                <i class='icon_search'></i>
+                                            </a>
+                                            <a href="#" class="books__wish-list">
+                                                <i class="icon_heart_alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info product__info--small">
+                                    <h4 class="product__name-book product__name-book--small"><a href="#"
+                                            class="product__anchor">fashion folly</a>
+                                    </h4>
+                                    <div class="product__link-author product__link-author--small">by
+                                        <span class="product__name-author product__name-author--small">
+                                            <a href="#" class="product__anchor">Toni Lieber </a>,
+                                            <a href="#" class="product__anchor">Leslie & Miller</a>
+                                        </span>
+                                    </div>
+                                    <div class="product__rating product__rating--small product__rating--brown">
+                                        <span
+                                            class="product__rating product__rating--rated product__rating--rated-small product__rating--rated--yellow"></span>
+                                    </div>
+                                    <div class="product__price">
+                                        $165.00
+                                    </div>
+                                    <a href="#" class="product__cart product__cart--small">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BLOG -->
+    <section class="blog">
+        <div class="container">
+            <div class="common__title common__title--center">
+                Blog Updates
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <div class="blog__wrapper">
+                        <div class="blog__thumb">
+                            <a href="#" class="blog__anchor">
+                                <img src="./images/blogs/Image-1-720x484.jpg" alt="book_news">
+                            </a>
+                        </div>
+                        <div class="blog__content">
+                            <p>
+                                <span class="blog__date">May 30, 2018</span>
+                                <a href="#" class="blog__category">life Style</a>
+                            </p>
+                            <h4 class="blog__title">
+                                <a href="#">book news missed this week</a>
+                            </h4>
+                            <div class="product__link-author product__link-author--small">by
+                                <span class="product__name-author product__name-author--small">
+                                    <a href="#" class="product__anchor">Admin</a>
+                                </span>
+                            </div>
+                            <p class="blog__description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Unde aliquid temporibus non animi minus quas adipisci dolore
+                                laboriosam vel voluptates, perspiciatis amet minima aspernatur,
+                                provident cum similique, quos inventore velit!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog__wrapper">
+                        <div class="blog__thumb">
+                            <a href="#" class="blog__anchor">
+                                <img src="./images/blogs/Image-2-1-720x484.jpg" alt="book_news">
+                            </a>
+                        </div>
+                        <div class="blog__content">
+                            <p>
+                                <span class="blog__date">May 30, 2018</span>
+                                <a href="#" class="blog__category">Men</a>
+                            </p>
+                            <h4 class="blog__title">
+                                <a href="#">Book fashion for children</a>
+                            </h4>
+                            <div class="product__link-author product__link-author--small">by
+                                <span class="product__name-author product__name-author--small">
+                                    <a href="#" class="product__anchor">Admin</a>
+                                </span>
+                            </div>
+                            <p class="blog__description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Unde aliquid temporibus non animi minus quas adipisci dolore
+                                laboriosam vel voluptates, perspiciatis amet minima aspernatur,
+                                provident cum similique, quos inventore velit!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog__wrapper">
+                        <div class="blog__thumb">
+                            <a href="#" class="blog__anchor">
+                                <img src="./images/blogs/Image-3-1-720x484.jpg" alt="book_news">
+                            </a>
+                        </div>
+                        <div class="blog__content">
+                            <p>
+                                <span class="blog__date">May 30, 2018</span>
+                                <a href="#" class="blog__category">fashion</a>
+                            </p>
+                            <h4 class="blog__title">
+                                <a href="#">Walk Around With Streetwear</a>
+                            </h4>
+                            <div class="product__link-author product__link-author--small">by
+                                <span class="product__name-author product__name-author--small">
+                                    <a href="#" class="product__anchor">Admin</a>
+                                </span>
+                            </div>
+                            <p class="blog__description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Unde aliquid temporibus non animi minus quas adipisci dolore
+                                laboriosam vel voluptates, perspiciatis amet minima aspernatur,
+                                provident cum similique, quos inventore velit!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container text-center newsletter__container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./images/banner1-5.jpg" alt="banner">
+                </div>
+                <div class="col-lg-4">
+                    <h1 class="newsletter__title">join the community</h1>
+                    <p class="newsletter__desc">Newsletter to get in touch</p>
+                    <input type="email" placeholder="Your Email address..." class="newsletter__input">
+                    <a href="#" class="newsletter__arrow arrow_right"></a>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/banner1-4.jpg" alt="banner2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- POLICY -->
+    <section class="policy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="policy__wrap">
+                        <div class="policy__thumb">
+                            <img src="./images/icons/policy-1.png" alt="policy_1">
+                        </div>
+                        <div class="policy__content">
+                            <h4 class="policy__title">
+                                <a href="#">Free shipping</a>
+                            </h4>
+                            <p class="policy__des">Select bettwen awide range of texbook and media.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="policy__wrap">
+                        <div class="policy__thumb">
+                            <img src="./images/icons/policy-2.png" alt="policy_1">
+                        </div>
+                        <div class="policy__content">
+                            <h4 class="policy__title">
+                                <a href="#">fast delivery</a>
+                            </h4>
+                            <p class="policy__des">Enjoy free shipping and our fast delivery service.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="policy__wrap">
+                        <div class="policy__thumb">
+                            <img src="./images/icons/policy-3.png" alt="policy_3">
+                        </div>
+                        <div class="policy__content">
+                            <h4 class="policy__title">
+                                <a href="#">discounted Free</a>
+                            </h4>
+                            <p class="policy__des">Get nice discount on our top rated product every sunday.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+    <!-- FOOTER  -->
+    <footer>
+        <div class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="footer__title">
+                            Contact us
+                        </h4>
+                        <div class="footer__address">
+                            <div class="footer__icon">
+                                <i class="icon_pin_alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="footer__contact">
+                                1998 Wall Street 707, Washington DC, USA
+                            </div>
+                        </div>
+                        <div class="footer__address">
+                            <div class="footer__icon">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="footer__contact">
+                                bookmart@domain.com
+                                support@gmail.com
+                            </div>
+                        </div>
+                        <div class="footer__address">
+                            <div class="footer__icon">
+                                <i class="icon_mobile" aria-hidden="true"></i>
+                            </div>
+                            <div class="footer__contact">
+                                <p>(84) 0123 456 789</p>
+                                <p>(84) 00123 456 78</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="footer__title">
+                            information
+                        </h4>
+                        <ul class="footer__menu">
+                            <li class="footer__link">
+                                <a href="#" class="footer__anchor">Contact us</a>
+                            </li>
+                            <li class="footer__link">
+                                <a href="#" class="footer__anchor">site map</a>
+                            </li>
+                            <li class="footer__link">
+                                <a href="#" class="footer__anchor">privacy policy</a>
+                            </li>
+                            <li class="footer__link">
+                                <a href="#" class="footer__anchor">about us</a>
+                            </li>
+                            <li class="footer__link">
+                                <a href="#" class="footer__anchor">costumer service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="footer__title">
+                            My account
+                        </h4>
+                        <ul class="footer__menu">
+                            <li class="footer__link">
+                                <a href="#" class="footer__anchor">sign in</a>
+                            </li>
+                            <li class="footer__link">
+                                <a href="#" class="footer__anchor">view cart</a>
+                            </li>
+                            <li class="footer__link">
+                                <a href="#" class="footer__anchor">my wishlist</a>
+                            </li>
+                            <li class="footer__link">
+                                <a href="#" class="footer__anchor">track my order</a>
+                            </li>
+                            <li class="footer__link">
+                                <a href="#" class="footer__anchor">help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="footer__title">
+                            instagram
+                        </h4>
+                        <div class="footer__instagram">
+                            <div class="instagram__carousel js-instagram__carousel">
+                                <div class="instagram__wrap">
+                                    <div class="instagram__container">
+                                        <a href="#" class="instagram__anchor">
+                                            <img src="https://scontent.cdninstagram.com/vp/09dd779547d655b66b5e526ecf294f32/5E89FCDA/t51.2885-15/sh0.08/e35/s640x640/58608519_1196644650509629_8646792715340162331_n.jpg?_nc_ht=scontent.cdninstagram.com"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="instagram__wrap">
+                                    <div class="instagram__container">
+                                        <a href="#" class="instagram__anchor">
+                                            <img src="https://scontent.cdninstagram.com/vp/1b20293eaa1d654fef97d49e2229858b/5E662BC3/t51.2885-15/sh0.08/e35/s640x640/59642477_599691307175931_3004026360570845984_n.jpg?_nc_ht=scontent.cdninstagram.com"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="instagram__wrap">
+                                    <div class="instagram__container">
+                                        <a href="#" class="instagram__anchor">
+                                            <img src="https://scontent.cdninstagram.com/vp/1e3bdd7b3218b69fda84d845d9f778ed/5E6A7DA2/t51.2885-15/sh0.08/e35/s640x640/59087475_644207699388937_8732845396192406039_n.jpg?_nc_ht=scontent.cdninstagram.com"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="instagram__wrap">
+                                    <div class="instagram__container">
+                                        <a href="#" class="instagram__anchor">
+                                            <img src="https://scontent.cdninstagram.com/vp/257c89a35685df2a564822ca581d0e2d/5E4C28EC/t51.2885-15/sh0.08/e35/s640x640/58409453_294217851484490_761059960092372759_n.jpg?_nc_ht=scontent.cdninstagram.com"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="footer__time-work">7 days a week from 8:00 am to 5 pm</p>
+                        <div class="footer__social">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy-right py-5">
+            <div class="container d-flex justify-content-between">
+                <div class="footer__copy-info">
+                    <span>Copyright &copy; 2019 </span>
+                    <a href="#" class="footer_author">Bootin</a>
+                    <span>Made by Wpbingo</span>
+                </div>
+                <div class="footer__payment">
+                    <a href="#">
+                        <img src="./images/paymet.png" alt="payment">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <aside>
+    <!-- MODAL PRODUCT -->
+    <section class="modal modal-product" id="modal-product-content">
+        <div class="container-fluid modal-product__container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="modal-product__wrapper js-modal-product__carousel">
+                        <div class="modal-product__thumb">
+                            <img src="/images/books/art_fashion.jpg" alt="art-fashion">
+                        </div>
+                        <div class="modal-product__thumb">
+                            <img src="/images/books/broken_silence.jpg" alt="broken_silence">
+                        </div>
+                        <div class="modal-product__thumb">
+                            <img src="/images/books/fashion_fally.jpg" alt="fashion_fally">
+                        </div>
+                        <div class="modal-product__thumb">
+                            <img src="/images/books/one_year_one_a_bike.jpg" alt="one_year_one_a_bike">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="modal-product__content">
+                        <div class="modal-product__title">cup cake diraes</div>
+                        <div class="modal-product__price">$20.50</div>
+                        <div class="modal-product__description">
+                            <div class="modal-product__status">
+                                <span class="modal-product__status--icon"><i class="icon_check"></i></span>
+                                <span>In stock</span>
+                            </div>
+                            <div class="modal-product__details">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur.
+                            </div>
+                            <div class="modal-product__cart">
+                                <input type="text" class="modal-product__amount" value="1">
+                                <a href="#" class="modal-product__add">Add to cart</a>
+                                <a href="#" class="modal-product__wishlist"><i class="icon_heart_alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="modal-product__others">
+                            <div class="modal-product__categories">
+                                <span>Categories:</span>
+                                <a href="#" class="modal-product__link">Horror</a>
+                                ,
+                                <a href="#" class="modal-product__link">Sandal</a>
+                            </div>
+                            <div class="modal-product__tags">
+                                <span>Tags:</span>
+                                <a href="#" class="modal-product__link">Kids</a>
+                                ,
+                                <a href="#" class="modal-product__link">Men</a>
+                                ,
+                                <a href="#" class="modal-product__link">Trend</a>
+                                ,
+                                <a href="#" class="modal-product__link">Woman</a>
+                            </div>
+                            <div class="modal-product__social">
+                                <span>Share:</span>
+                                <a href="#" class="modal-product__link modal-product__link--social">
+                                    <i class="social_facebook"></i>
+                                </a>
+                                <a href="#" class="modal-product__link modal-product__link--social">
+                                    <i class="social_twitter"></i>
+                                </a>
+                                <a href="#" class="modal-product__link modal-product__link--social">
+                                    <i class="social_linkedin"></i>
+                                </a>
+                                <a href="#" class="modal-product__link modal-product__link--social">
+                                    <i class="social_googleplus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MODAL PRODUCT ADD SUCCESS -->
+    <section class="modal-added">
+        <span>Product added!</span>
+    </section>
+    </aside>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

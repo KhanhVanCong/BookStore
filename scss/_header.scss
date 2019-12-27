@@ -1,0 +1,89 @@
+/* HEADER */
+.header {
+  padding: 4rem 0;
+
+  * {
+    font-size: 1.6rem;
+    color: $grey-color;
+  }
+
+  &__logo {
+    max-height: 2.5rem;
+  }
+
+  &__close {
+    display: none;
+  }
+
+  &__menu {
+    font-weight: 600;
+    line-height: 2.24rem;
+  }
+
+  &__menu-list,
+  &__icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__menu-item {
+    padding: 0 1.5rem;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+
+    &:hover {
+      a {
+        border-bottom: 1px solid $pink-color;
+        color: $pink-color;
+      }
+    }
+  }
+
+  &__users {
+    padding: 0;
+  }
+
+  &__icon-item {
+    padding: 0 0.5rem;
+    position: relative;
+
+    i {
+      font-size: 2.1rem;
+    }
+
+    &:hover {
+      i {
+        color: $pink-color;
+      }
+    }
+
+    &--flip {
+      transform: scaleX(-1);
+    }
+
+    &--border::before {
+      content: "|";
+      display: inline-block;
+      font-size: 2rem;
+      padding-left: 0.1rem;
+      color: hsla(0, 0%, 67%, 0.25);
+    }
+
+    &--padding-right {
+      padding-right: 1.8rem;
+    }
+  }
+
+  &__mini-cart {
+    border-radius: 50%;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    background-color: $pink-color;
+    position: absolute;
+    top: -0.5rem;
+  }
+}
