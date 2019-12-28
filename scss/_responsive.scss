@@ -1,5 +1,5 @@
 @mixin large-desktop {
-  @media only screen and (max-width: 120em) {
+  @media only screen and (min-width: 120em) and (max-width: 120em) {
     @content;
   }
 }
@@ -23,26 +23,7 @@
 }
 
 @mixin large-mobile {
-  @media only screen and (max-width: 64em) {
+  @media only screen and (max-width: 48em) {
     @content;
-  }
-}
-
-/* REPONSIVE */
-@include large-desktop {
-  .container {
-    max-width: 1500px;
-  }
-}
-
-@include average-desktop {
-  .container {
-    max-width: 1400px;
-  }
-}
-
-@include average-laptop {
-  .container {
-    max-width: 1200px;
   }
 }

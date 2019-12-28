@@ -242,123 +242,54 @@
   }
 }
 
-// /* REPONSIVE */
-// @include large-desktop {
-//   .container {
-//     max-width: 1500px;
-//   }
-// }
+/* REPONSIVE */
+@include large-mobile {
+  #navbarNavAltMarkup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    height: 100%;
+    width: 25rem;
+  }
 
-// @include average-desktop {
-//   .container {
-//     max-width: 1400px;
-//   }
-// }
+  .navbar-collapse.collapse {
+    transform: translate3d(-28rem, 0, 0);
+    -webkit-transform: translate3d(-28rem, 0, 0);
+    transition: all 0.5s ease-in-out 0s;
+    display: block;
+    visibility: hidden;
 
-@include average-laptop {
-  .best-author__name {
-    color: red;
+    &.active {
+      visibility: visible;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      transition: all 0.5s ease-in-out 0s;
+    }
+  }
+
+  .events__container {
+    width: 80%;
+  }
+
+  .best-author {
+    &__content {
+      text-align: center;
+    }
+
+    &__explore {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .sale__book-list {
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+
+  .sale__book-type {
+    white-space: nowrap;
   }
 }
-
-// @media only screen and (max-width: 64em) { /* 1024px */
-
-//   .header__icon-item i {
-//     font-size: 1.6rem;
-//   }
-
-//   .header___mini-cart {
-//     width: 2rem;
-//     height: 2rem;
-//     line-height: 2rem;
-//   }
-// }
-
-// @media only screen and (max-width: 48em) { /* 768px */
-//   /* HEADER CLOSE */
-//   .header__brand {
-//     text-align: center;
-//   }
-
-//   .header__icon-list {
-//     justify-content: flex-end;
-//   }
-
-//   .header__toggler {
-//     text-transform: uppercase;
-//     border-top: 1px solid #f86d72;
-//     border-bottom: 1px solid #f86d72;
-//     padding: 1rem 0;
-//     outline: none !important;
-//   }
-
-//   #navbarNavAltMarkup {
-//     position: fixed;
-//     left: 0;
-//     top: 0;
-//     z-index: 100;
-//     background-color: #fff;
-//     height: 100%;
-//     width: 25rem;
-//   }
-
-//   .navbar-collapse.collapse {
-//     transform: translate3d(-28rem, 0, 0);
-//     -webkit-transform: translate3d(-28rem, 0, 0);
-//     transition: all 0.5s ease-in-out 0s;
-//     display: block;
-//     visibility: hidden;
-//   }
-
-//   .navbar-collapse.collapse.active {
-//     visibility: visible;
-//     transform: translate3d(0, 0, 0);
-//     -webkit-transform: translate3d(0, 0, 0);
-//     transition: all 0.5s ease-in-out 0s;
-//   }
-
-//   .header__menu-list {
-//     flex-direction: column;
-//     align-items: flex;
-//     align-items: flex-start;
-//     padding-left: 2rem;
-//     padding-top: 2rem;
-//   }
-
-//   .header__close {
-//     display: block;
-//     padding: 2rem;
-//     background-color: var(--pink-color);
-//   }
-
-//   .header__close-icon {
-//     margin-left: auto;
-//     border-radius: 50%;
-//     height: 2rem;
-//     width: 2rem;
-//     text-align: center;
-//     line-height: 1.9rem;
-//     background-color: #fff;
-//   }
-
-//   .header__menu-item {
-//     padding: 1rem 0;
-//     border-bottom: 1px solid hsla(0, 0%, 56%, 0.25);
-//     width: 100%;
-//   }
-
-//   /* EVENT */
-//   .events__container {
-//     width: 80%;
-//   }
-
-//   /* BEST AUTHOR THE WEEK */
-//   .best-author__content {
-//     text-align: center;
-//   }
-
-//   .best-author__explore {
-//     text-align: center;
-//     margin-bottom: 2rem;
-//   }
-// }

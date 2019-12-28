@@ -1,4 +1,6 @@
 /* HEADER */
+@import "responsive";
+
 .header {
   padding: 4rem 0;
 
@@ -85,5 +87,68 @@
     background-color: $pink-color;
     position: absolute;
     top: -0.5rem;
+  }
+
+  @include tablet {
+    .header__icon-item i {
+      font-size: 1.6rem;
+    }
+
+    .header___mini-cart {
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+    }
+  }
+
+  @include large-mobile {
+    .header {
+      &__brand {
+        text-align: center;
+      }
+
+      &__icon-list {
+        justify-content: flex-end;
+      }
+
+      &__toggler {
+        text-transform: uppercase;
+        border-top: 1px solid #f86d72;
+        border-bottom: 1px solid #f86d72;
+        padding: 1rem 0;
+        outline: none !important;
+        border-radius: unset;
+      }
+
+      &__menu-list {
+        flex-direction: column;
+        align-items: flex;
+        align-items: flex-start;
+        padding-left: 2rem;
+        padding-top: 2rem;
+      }
+
+      &__close {
+        display: block;
+        padding: 2rem;
+        background-color: $pink-color;
+      }
+
+      &__close-icon {
+        margin-left: auto;
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        text-align: center;
+        line-height: 1.9rem;
+        background-color: #fff;
+      }
+
+      &__menu-item {
+        padding: 1rem 0;
+        border-bottom: 1px solid hsla(0, 0%, 56%, 0.25);
+        width: 100%;
+      }
+    }
   }
 }
