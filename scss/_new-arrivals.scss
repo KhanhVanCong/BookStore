@@ -2,6 +2,10 @@
 .new-arrivals {
   &__container {
     padding: 0 1.5rem;
+
+    @include large-mobile {
+      padding: 0 1rem;
+    }
   }
 
   &__wrapper {

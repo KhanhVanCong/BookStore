@@ -42,6 +42,10 @@ img {
 
 html {
   font-size: 62.5%;
+
+  @include large-mobile {
+    font-size: 60%;
+  }
 }
 
 body {
@@ -61,6 +65,10 @@ body {
     padding-left: 1.5rem;
     text-align: left;
     white-space: nowrap;
+
+    @include large-mobile {
+      font-size: 2.2rem;
+    }
 
     &--no-margin {
       margin: 0 !important;

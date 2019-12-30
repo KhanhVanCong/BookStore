@@ -1,5 +1,12 @@
 /* FOOTER */
 .footer {
+  &__wrap {
+    @include large-mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   &__top {
     font-size: 1.6rem;
     color: $grey-text;
@@ -56,6 +63,10 @@
   &__copy-info {
     font-size: 1.4rem;
     color: $grey-text;
+
+    @include large-mobile {
+      margin-bottom: 1rem;
+    }
   }
 
   &__author {

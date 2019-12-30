@@ -176,6 +176,10 @@
   &__container {
     border: 5px solid rgba(245, 245, 245, 0.6);
     padding: 5rem 0;
+
+    @include large-mobile {
+      padding: 5rem 1.5rem;
+    }
   }
 
   &__title {
@@ -286,7 +290,8 @@
 
   .sale__book-list {
     justify-content: flex-start;
-    overflow-x: scroll;
+    overflow: scroll hidden;
+    margin-top: 2rem;
   }
 
   .sale__book-type {
