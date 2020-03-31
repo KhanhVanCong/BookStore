@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,8 +8,7 @@
     <meta name="viewport" content="height=device-height, minimum-scale=1, width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Muli%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C700%2C700i%7CMerriweather%3A300%2C300i%2C400%2C400i%2C700%2C700i%2C900%2C900i%7COpen%2BSans&subset=latin%2Clatin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:700%7CMuli:700%2C600">
@@ -35,76 +34,9 @@
     <button id="back-top">
         <i class="fa fa-angle-up"></i>
     </button>
-    <!-- HEADER -->
-    <section id="bs-header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-2 header__brand">
-                    <a href="#">
-                        <img src="./images/logo.png" alt="Logo" class="header__logo">
-                    </a>
-                </div>
-                <div class="col-3 col-md-2 col-lg-8 navbar-expand-lg header__menu" id="header-menu">
-                    <button class="navbar-toggler header__toggler" type="button">
-                        Menu
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="header__close">
-                            <div class="header__close-icon">
-                                <span aria-hidden="true">&times;</span>
-                            </div>
-                        </div>
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item">
-                                <a href="#">Home</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="#">Shop</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="#">Blog</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="#">Portfolio</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="#">Author</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-9 col-md-10 col-lg-2 header__users">
-                    <ul class="header__icon-list">
-                        <li class="header__icon-item header__icon-item--flip">
-                            <a href="#">
-                                <i class="icon_search" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="header__icon-item header__icon-item--border header__icon-item--padding-right">
-                            <a href="#">
-                                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                <span class="header__mini-cart">0</span>
-                            </a>
-                        </li>
-                        <li class="header__icon-item header__icon-item--border header__icon-item--padding-right">
-                            <a href="#">
-                                <i class="icon_bag_alt" aria-hidden="true"></i>
-                                <span class="header__mini-cart">0</span>
-                            </a>
-                        </li>
-                        <li class="header__icon-item header__icon-item--border">
-                            <a href="#">
-                                <i class="fa fa-user-o" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    @@include('./common/main-menu.html')
+
     <main>
         <!-- PRODUCTION LIST -->
         <section id="bs-production-list" class="production">
@@ -1676,6 +1608,7 @@
             </div>
         </section>
     </main>
+
     <!-- FOOTER  -->
     <footer>
         <div class="footer__top">
@@ -1765,7 +1698,7 @@
                                 <div class="instagram__wrap">
                                     <div class="instagram__container">
                                         <a href="#" class="instagram__anchor">
-                                            <img src="https://scontent.cdninstagram.com/vp/09dd779547d655b66b5e526ecf294f32/5E89FCDA/t51.2885-15/sh0.08/e35/s640x640/58608519_1196644650509629_8646792715340162331_n.jpg?_nc_ht=scontent.cdninstagram.com"
+                                            <img src="images/instagram/2.jpg"
                                                 alt="">
                                         </a>
                                     </div>
@@ -1773,7 +1706,7 @@
                                 <div class="instagram__wrap">
                                     <div class="instagram__container">
                                         <a href="#" class="instagram__anchor">
-                                            <img src="https://scontent.cdninstagram.com/vp/1b20293eaa1d654fef97d49e2229858b/5E662BC3/t51.2885-15/sh0.08/e35/s640x640/59642477_599691307175931_3004026360570845984_n.jpg?_nc_ht=scontent.cdninstagram.com"
+                                            <img src="images/instagram/3.jpg"
                                                 alt="">
                                         </a>
                                     </div>
@@ -1781,7 +1714,7 @@
                                 <div class="instagram__wrap">
                                     <div class="instagram__container">
                                         <a href="#" class="instagram__anchor">
-                                            <img src="https://scontent.cdninstagram.com/vp/1e3bdd7b3218b69fda84d845d9f778ed/5E6A7DA2/t51.2885-15/sh0.08/e35/s640x640/59087475_644207699388937_8732845396192406039_n.jpg?_nc_ht=scontent.cdninstagram.com"
+                                            <img src="/images/instagram/4.jpg"
                                                 alt="">
                                         </a>
                                     </div>
@@ -1789,7 +1722,15 @@
                                 <div class="instagram__wrap">
                                     <div class="instagram__container">
                                         <a href="#" class="instagram__anchor">
-                                            <img src="https://scontent.cdninstagram.com/vp/257c89a35685df2a564822ca581d0e2d/5E4C28EC/t51.2885-15/sh0.08/e35/s640x640/58409453_294217851484490_761059960092372759_n.jpg?_nc_ht=scontent.cdninstagram.com"
+                                            <img src="/images/instagram/5.jpg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="instagram__wrap">
+                                    <div class="instagram__container">
+                                        <a href="#" class="instagram__anchor">
+                                            <img src="/images/instagram/58679508_436790503722999_1882617083569793513_n.jpg"
                                                 alt="">
                                         </a>
                                     </div>
@@ -1831,6 +1772,7 @@
         </div>
 
     </footer>
+    <!-- FOOTER  -->
 
     <aside>
         <!-- MODAL PRODUCT -->
@@ -1920,22 +1862,12 @@
         </section>
     </aside>
 
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
