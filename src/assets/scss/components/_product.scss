@@ -30,7 +30,7 @@
     flex-wrap: nowrap;
     border-left: 1px solid #fff;
 
-    @include large-mobile {
+    @include responsive(large-mobile) {
       flex-direction: column;
     }
 
@@ -45,7 +45,7 @@
     top: 8rem;
     padding: 0 5rem;
 
-    @include large-mobile {
+    @include responsive(large-mobile) {
       padding: 0 1.5rem;
     }
 
@@ -71,14 +71,14 @@
     padding-right: 5rem;
     flex-basis: 48.34%;
 
-    @include large-mobile {
+    @include responsive(large-mobile) {
       padding: 15rem 1.5rem 0;
     }
 
     &--small {
       padding: 4rem 0 1rem;
 
-      @include large-mobile {
+      @include responsive(large-mobile) {
         padding: 6rem 1.5rem 1rem;
       }
     }
@@ -203,33 +203,6 @@
 
       &:hover {
         background-color: $pink-dark-color;
-      }
-    }
-  }
-}
-
-/* SLICK DOT */
-.slick-dots {
-  position: unset;
-  margin-top: 2.5rem;
-
-  li {
-    margin: 0 0.1rem;
-
-    button {
-      &::before {
-        font-size: 1.6rem;
-        color: rgba(248, 109, 114, 0.5);
-        opacity: 0.8;
-      }
-    }
-  }
-
-  li.slick-active {
-    button {
-      &::before {
-        color: #f86d72;
-        opacity: 1;
       }
     }
   }

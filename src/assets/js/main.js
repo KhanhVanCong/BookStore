@@ -1,22 +1,4 @@
-
 $(document).ready(() => {
-  // Disable Loading
-  $('.js-loading').removeClass('loading--active');
-
-  // Back to Top
-  const btnbackTop = document.getElementById('back-top');
-  btnbackTop.addEventListener('click', backToTop);
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () { scrollFunction(); };
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      btnbackTop.setAttribute('class', 'back-top--active');
-    } else {
-      btnbackTop.setAttribute('class', 'back-top--hidden');
-    }
-  }
-
 
   function backToTop() {
     window.scrollTo({
@@ -25,6 +7,23 @@ $(document).ready(() => {
     });
   }
 
+  // Disable Loading
+  $('.js-loading').removeClass('loading--active');
+
+  // Back to Top
+  const btnbackTop = document.getElementById('back-top');
+  btnbackTop.addEventListener('click', backToTop);
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() { scrollFunction(); };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      btnbackTop.setAttribute('class', 'back-top--active');
+    } else {
+      btnbackTop.setAttribute('class', 'back-top--hidden');
+    }
+  }
+  
   // Add Carousel
   $('.js-production__carousel').slick({
     slidesToShow: 1,

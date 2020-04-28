@@ -1,0 +1,10 @@
+.contact {
+  &__item {
+    padding-bottom: 2rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $line-border-color;
+      margin-bottom: 4rem;
+    }
+  }
+}

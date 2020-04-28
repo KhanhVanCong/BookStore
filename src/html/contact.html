@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Book Stores</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="height=device-height, minimum-scale=1, width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Begin Vendors CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Muli%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C700%2C700i%7CMerriweather%3A300%2C300i%2C400%2C400i%2C700%2C700i%2C900%2C900i%7COpen%2BSans&subset=latin%2Clatin-ext">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:700%7CMuli:700%2C600">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="./assets/fonts/elegant-fonts.css">
+  <!-- End Vendors CSS -->
+
+  <link rel="stylesheet" href="./assets/css/main.min.css">
+</head>
+
+<body>
+  <!-- LOADING -->
+  <div class="loading loading--active js-loading">
+    <div class="loading__wrapper">
+      <div class="loading__dot">
+      </div>
+    </div>
+  </div>
+  <!-- MOVE TOP -->
+  <button id="back-top">
+    <i class="fa fa-angle-up"></i>
+  </button>
+
+  @@include('./common/navbar.html')
+
+  <main>
+    <!-- BREADCUMB -->
+    <section class="section-breadcumb">
+      <div class="breadcumb">
+        <h5 class="heading-primary">contact</h5>
+        <ul class="breadcumb__list">
+          <li class="breadcumb__item"><a href="#">home</a></li>
+          <li class="breadcumb__item"><a href="#">contact</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="contact">
+              <li class="contact__item">
+                <h4 class="heading-tertiary">address</h4>
+                <p class="paragraph mt-3">14 LE Gounlburn St, Sydney 1198NSA.</p>
+              </li>
+              <li class="contact__item">
+                <h4 class="heading-tertiary">phone</h4>
+                <p class="paragraph mt-3">(+089) 19918989</p>
+              </li>
+              <li class="contact__item">
+                <h4 class="heading-tertiary">email</h4>
+                <p class="paragraph mt-3">support@domain.com</p>
+              </li>
+              <li class="contact__item">
+                <h4 class="heading-tertiary">opening time</h4>
+                <p class="paragraph mt-3">8:00Am – 10:00Pm, sunday close</p>
+              </li>
+              <li class="contact__item">
+                <h4 class="heading-tertiary">follow us on</h4>
+                <div class="author__socials">
+                  <a href="#">
+                    <i class="fa fa-facebook author__socials--medium" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-twitter author__socials--medium" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-google-plus author__socials--medium" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-instagram author__socials--medium" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9 text-right">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6304.829986131271!2d-122.4746968033092!3d37.80374752160443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808586e6302615a1%3A0x86bd130251757c00!2sStorey+Ave%2C+San+Francisco%2C+CA+94129!5e0!3m2!1sen!2sus!4v1435826432051"
+              width="90%" height="540" frameborder="0"
+              allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER  -->
+  @@include('./common/footer.html')
+  <!-- FOOTER  -->
+  <aside>
+    <!-- MODAL PRODUCT -->
+    <section class="modal modal-product" id="modal-product-content">
+      <div class="container-fluid modal-product__container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="modal-product__wrapper js-modal-product__carousel">
+              <div class="modal-product__thumb">
+                <img src="./assets/images/books/art_fashion.jpg" alt="art-fashion">
+              </div>
+              <div class="modal-product__thumb">
+                <img src="./assets/images/books/broken_silence.jpg" alt="broken_silence">
+              </div>
+              <div class="modal-product__thumb">
+                <img src="./assets/images/books/fashion_fally.jpg" alt="fashion_fally">
+              </div>
+              <div class="modal-product__thumb">
+                <img src="./assets/images/books/one_year_one_a_bike.jpg" alt="one_year_one_a_bike">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="modal-product__content">
+              <div class="modal-product__title">cup cake diraes</div>
+              <div class="modal-product__price">$20.50</div>
+              <div class="modal-product__description">
+                <div class="modal-product__status">
+                  <span class="modal-product__status--icon"><i class="icon_check"></i></span>
+                  <span>In stock</span>
+                </div>
+                <div class="modal-product__details">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+                <div class="modal-product__cart">
+                  <input type="text" class="modal-product__amount" value="1">
+                  <a href="#" class="modal-product__add">Add to cart</a>
+                  <a href="#" class="modal-product__wishlist"><i class="icon_heart_alt"></i></a>
+                </div>
+              </div>
+              <div class="modal-product__others">
+                <div class="modal-product__categories">
+                  <span>Categories:</span>
+                  <a href="#" class="modal-product__link">Horror</a>
+                  ,
+                  <a href="#" class="modal-product__link">Sandal</a>
+                </div>
+                <div class="modal-product__tags">
+                  <span>Tags:</span>
+                  <a href="#" class="modal-product__link">Kids</a>
+                  ,
+                  <a href="#" class="modal-product__link">Men</a>
+                  ,
+                  <a href="#" class="modal-product__link">Trend</a>
+                  ,
+                  <a href="#" class="modal-product__link">Woman</a>
+                </div>
+                <div class="modal-product__social">
+                  <span>Share:</span>
+                  <a href="#" class="modal-product__link modal-product__link--social">
+                    <i class="social_facebook"></i>
+                  </a>
+                  <a href="#" class="modal-product__link modal-product__link--social">
+                    <i class="social_twitter"></i>
+                  </a>
+                  <a href="#" class="modal-product__link modal-product__link--social">
+                    <i class="social_linkedin"></i>
+                  </a>
+                  <a href="#" class="modal-product__link modal-product__link--social">
+                    <i class="social_googleplus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODAL PRODUCT ADD SUCCESS -->
+    <section class="modal-added">
+      <span>Product added!</span>
+    </section>
+  </aside>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="./assets/js/main-min.js"></script>
+</body>
+
+</html>

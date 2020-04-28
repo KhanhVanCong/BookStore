@@ -40,7 +40,7 @@
       visibility: visible;
       opacity: 1;
 
-      @include large-mobile {
+      @include responsive(large-mobile) {
         visibility: hidden;
         opacity: 0;
       }
@@ -56,7 +56,7 @@
         background: hsla(0, 0%, 100%, 0.7);
         z-index: 1;
 
-        @include large-mobile {
+        @include responsive(large-mobile) {
           visibility: hidden;
         }
       }
@@ -118,54 +118,5 @@
   &__price {
     color: $pink-color;
     font-size: 1.6rem;
-  }
-}
-
-/* AUTHOR */
-.author {
-  text-align: center;
-  font-family: $merri;
-
-  &__container {
-    border-right: 2px solid #fff;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 50%;
-      border-bottom: 2px solid $pink-color;
-      margin: 0 auto;
-      padding: 2rem 0;
-    }
-  }
-
-  &__name {
-    font-size: 2.1rem;
-    text-transform: capitalize;
-    padding: 2rem 0;
-  }
-
-  &__major {
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    color: $dark-gray-color;
-  }
-
-  &__description {
-    font-family: $muli;
-    font-size: 1.4rem;
-    color: #454545;
-    padding: 5rem 0;
-  }
-
-  &__socials {
-    &--medium {
-      font-size: 1.2rem;
-      padding: 0 0.8rem;
-    }
-  }
-
-  .slick-dots li button::before {
-    font-size: 1.2rem;
   }
 }
