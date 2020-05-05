@@ -30,16 +30,12 @@
 
 <body>
   <!-- LOADING -->
-  <div class="loading loading--active js-loading">
-    <div class="loading__wrapper">
-      <div class="loading__dot">
-      </div>
-    </div>
-  </div>
-  <!-- MOVE TOP -->
-  <button id="back-top">
-    <i class="fa fa-angle-up"></i>
-  </button>
+  @@include('./common/loading.html')
+  <!-- END LOADING -->
+
+  <!-- BACK TOP -->
+  @@include('./common/back-top.html')
+  <!-- END BACK TOP -->
 
   @@include('./common/navbar.html')
 

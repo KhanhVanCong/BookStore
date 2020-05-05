@@ -99,7 +99,7 @@
     }
   }
 
-  @include responsive(large-mobile) {
+  @include responsive(tablet) {
     .header {
       &__brand {
         text-align: center;
@@ -152,7 +152,7 @@
   }
 }
 
-@include responsive(large-mobile) {
+@include responsive(tablet) {
   #navbarNavAltMarkup {
     position: fixed;
     left: 0;

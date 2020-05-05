@@ -65,5 +65,9 @@
   &__link {
     font-size: 1.4rem;
     padding-right: 3rem;
+
+    @include responsive(average-laptop) {
+      padding-right: 2rem;
+    }
   }
 }

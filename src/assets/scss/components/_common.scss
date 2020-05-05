@@ -47,4 +47,24 @@
       opacity: 1;
     }
   }
+
+  &__button--arrow {
+    box-shadow: unset;
+    padding: 0.8rem 1rem;
+    font-size: 1.6rem;
+
+    @include responsive(small-mobile) {
+      font-size: 1.4rem;
+      white-space: nowrap;
+      line-height: 3.2rem;
+      height: fit-content;
+    }
+
+    &::after {
+      display: inline-block;
+      content: "\f061";
+      font-family: FontAwesome;
+      margin-left: 1.2rem;
+    }
+  }
 }

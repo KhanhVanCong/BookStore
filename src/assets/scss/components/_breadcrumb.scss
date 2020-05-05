@@ -1,8 +1,11 @@
 .breadcumb {
   @include centerBox();
 
+  width: 100%;
+
   &__list {
     display: flex;
+    flex-wrap: wrap;
     text-transform: capitalize;
     font-size: 1.8rem;
     justify-content: center;

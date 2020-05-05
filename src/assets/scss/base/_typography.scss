@@ -23,9 +23,28 @@ h5 {
   font-weight: 400;
 }
 
+.heading-form {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: $muli;
+  font-weight: 800;
+}
+
 .paragraph {
   font-size: 1.5rem;
   font-family: $muli;
   font-weight: 300;
   color: $grey-light;
+}
+
+.title-page {
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  transform-origin: 90%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 6rem;
+  color: $grey-light;
+  opacity: 0.3;
 }

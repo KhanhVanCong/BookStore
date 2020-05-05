@@ -110,6 +110,10 @@
     font-size: 2rem;
     color: white;
     height: 4rem;
+
+    &--large {
+      margin: 2rem 0;
+    }
   }
 
   &__amount {
@@ -118,8 +122,16 @@
     height: 100%;
     border: 1px solid hsla(0, 0%, 56%, 0.5);
 
+    @include responsive(small-mobile) {
+      width: 3rem;
+    }
+
     &:focus {
       outline: none;
+    }
+
+    &--no-border {
+      border: unset;
     }
   }
 
@@ -131,6 +143,11 @@
   &__add {
     margin: 0 2rem;
     padding: 0 4rem;
+
+    @include responsive(small-mobile) {
+      margin: 0;
+      padding: 0 2rem;
+    }
   }
 
   &__add,
@@ -167,5 +184,31 @@
 
   &__tags {
     padding: 1rem 0;
+
+    &--large {
+      padding: 2rem 0;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    border: 1px solid hsla(0, 0%, 56%, 0.5);
+    padding: 0.3rem 1rem;
+  }
+
+  &__icon {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+
+    &:hover {
+      color: $pink-color;
+    }
+
+    &:focus {
+      outline: none;
+      color: $pink-color;
+    }
   }
 }

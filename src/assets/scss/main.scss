@@ -1,5 +1,6 @@
 @import "./abstracts/mixin";
 @import "./abstracts/variable";
+@import "./abstracts/placeholder";
 @import "./base/base";
 @import "./base/typography";
 @import "./base/animations";
@@ -22,6 +23,13 @@
 @import "./components/policy";
 @import "./components/breadcrumb";
 @import "./components/contact";
+@import "./components/notification";
+@import "./components/product-detail";
+@import "./components/product-related";
+@import "./components/magnify";
+@import "./components/rate";
+@import "./components/review";
+@import "./components/elegant-icon";
 @import "./layout/bootstrap";
 @import "./layout/header";
 @import "./layout/footer";
