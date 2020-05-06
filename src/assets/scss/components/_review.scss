@@ -94,6 +94,10 @@
   }
 
   &__wrap {
+    @include responsive(large-mobile) {
+      margin-bottom: 3rem;
+    }
+
     &--required::before {
       content: "*";
       color: $pink-dark-color;
@@ -103,14 +107,6 @@
       transform: translate(-50%, 50%);
     }
   }
-
-  // &__input:hover,
-  // &__input:focus,
-  // &__text:hover,
-  // &__text:focus {
-  //   outline: none;
-  //   background-color: $gray-color;
-  // }
 }
 
 .review__star:hover.review__star-1::after,

@@ -36,7 +36,13 @@ $(document).ready(() => {
       {
         breakpoint: 1367,
         settings: {
-          centerPadding: '300px',
+          centerPadding: '200px',
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          centerPadding: '150px',
         },
       },
       {

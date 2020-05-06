@@ -26,13 +26,13 @@
   }
 
   @if $breakpoint == large-mobile {
-    @media only screen and (max-width: 48em) {
+    @media only screen and (max-width: 47.9875em) {
       @content;
     }
   }
 
   @if $breakpoint == tablet {
-    @media only screen and (max-width: 64em) {
+    @media only screen and (max-width: 61.9875em) {
       @content;
     }
   }

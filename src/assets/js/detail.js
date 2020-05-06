@@ -78,7 +78,7 @@ $(document).ready(() => {
     nextArrow: '<button type="button" data-role="none" class="slick-arrow arrow-down" aria-label="Next" tabindex="0" role="button"><i class="arrow_carrot-down"></i></button>',
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 767.98,
         settings: {
           slidesToShow: 5,
           vertical: false,
@@ -137,15 +137,19 @@ $(document).ready(() => {
   // Click Thumb Change Picture In Detail
   $('.detail__thumb').on('click', function () {
     const self = $(this);
-    $('.detail__thumb').each(() => {
-      const $this = $(this);
-      if ($this.hasClass('detail__thumb--active')) {
-        $this.removeClass('detail__thumb--active');
-        return false;
-      }
-      return true;
+    $('.detail__thumb--active').each(() => {
+      const item = $(this);
+      item.removeClass('detail__thumb--active');
     });
-    self.addClass('detail__thumb--active');
+    // $('.detail__thumb').each(() => {
+    //   const item = $(this);
+    //   if (item.hasClass('detail__thumb--active')) {
+    //     item.removeClass('detail__thumb--active');
+    //     //return false;
+    //   }
+    //   //return true;
+    // });
+    //self.addClass('detail__thumb--active');
     const dirImg = self.children().attr('src');
     setMagnifyImg(dirImg);
   });
