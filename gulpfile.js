@@ -63,9 +63,17 @@ function defaultTask() {
   watch();
 }
 
+function buildApp() {
+  buildHTML();
+  complierSass();
+  imgMinify();
+  jsMinify()
+}
+
 exports.buildHTML = buildHTML;
 exports.complierSass = complierSass;
 exports.imgMinify = imgMinify;
 exports.jsMinify = jsMinify;
+exports.buildApp = buildApp;
 exports.watch = watch;
 exports.default = defaultTask;
