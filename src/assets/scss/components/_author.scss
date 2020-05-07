@@ -44,4 +44,21 @@
   .slick-dots li button::before {
     font-size: 1.2rem;
   }
+
+  &__box {
+    border: none;
+  }
+
+  &__avatar {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__thumb {
+    transition: all .5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
