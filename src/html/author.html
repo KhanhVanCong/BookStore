@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Book Stores</title>
+  <title>Product Authors - Book Stores</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport"
@@ -51,12 +51,12 @@
       </div>
     </section>
     <!-- END BREADCUMB -->
-    
+
     <!-- AUTHORS -->
-    <section class="section-contact">
+    <section class="section-authors">
       <div class="container">
         <div class="row">
-          <div class="col-xl-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="card author__box">
               <div class="author__avatar">
                 <img class="card-img-top author__thumb" src="./assets/images/authors/anna-hilton.jpg" alt="author">
@@ -67,36 +67,80 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="card author__box">
               <div class="author__avatar">
-                <img class="card-img-top author__thumb" src="./assets/images/authors/anna-hilton.jpg" alt="author">
+                <img class="card-img-top author__thumb" src="./assets/images/authors/anna-hiltons.jpg" alt="author">
               </div>
               <div class="card-body text-center">
-                <h5 class="card-title heading-quaternary"><a href="#">anna hillton</a></h5>
+                <h5 class="card-title heading-quaternary"><a href="#">Anna Hilltons</a></h5>
+                <p class="card-text author__published">4 published book</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card author__box">
+              <div class="author__avatar">
+                <img class="card-img-top author__thumb" src="./assets/images/authors/coco.jpg" alt="author">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title heading-quaternary"><a href="#">Coco Simon</a></h5>
+                <p class="card-text author__published">2 published book</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card author__box">
+              <div class="author__avatar">
+                <img class="card-img-top author__thumb" src="./assets/images/authors/nicolas.jpg" alt="author">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title heading-quaternary"><a href="#">Nicolas Sumpir</a></h5>
                 <p class="card-text author__published">3 published book</p>
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="card author__box">
               <div class="author__avatar">
-                <img class="card-img-top author__thumb" src="./assets/images/authors/anna-hilton.jpg" alt="author">
+                <img class="card-img-top author__thumb" src="./assets/images/authors/oga.jpg" alt="author">
               </div>
               <div class="card-body text-center">
-                <h5 class="card-title heading-quaternary"><a href="#">anna hillton</a></h5>
-                <p class="card-text author__published">3 published book</p>
+                <h5 class="card-title heading-quaternary"><a href="#">oga sylas</a></h5>
+                <p class="card-text author__published">0 published book</p>
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <div class="card author__box">
               <div class="author__avatar">
-                <img class="card-img-top author__thumb" src="./assets/images/authors/anna-hilton.jpg" alt="author">
+                <img class="card-img-top author__thumb" src="./assets/images/authors/peter.jpg" alt="author">
               </div>
               <div class="card-body text-center">
-                <h5 class="card-title heading-quaternary"><a href="#">anna hillton</a></h5>
-                <p class="card-text author__published">3 published book</p>
+                <h5 class="card-title heading-quaternary"><a href="#">peter paker</a></h5>
+                <p class="card-text author__published">0 published book</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card author__box">
+              <div class="author__avatar">
+                <img class="card-img-top author__thumb" src="./assets/images/authors/sabela.jpg" alt="author">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title heading-quaternary"><a href="#">sabela hupter</a></h5>
+                <p class="card-text author__published">7 published book</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card author__box">
+              <div class="author__avatar">
+                <img class="card-img-top author__thumb" src="./assets/images/authors/susan.jpg" alt="author">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title heading-quaternary"><a href="#">susan merrlin</a></h5>
+                <p class="card-text author__published">4 published book</p>
               </div>
             </div>
           </div>
@@ -110,94 +154,7 @@
   <!-- FOOTER  -->
   @@include('./common/footer.html')
   <!-- FOOTER  -->
-  <aside>
-    <!-- MODAL PRODUCT -->
-    <section class="modal modal-product" id="modal-product-content">
-      <div class="container-fluid modal-product__container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="modal-product__wrapper js-modal-product__carousel">
-              <div class="modal-product__thumb">
-                <img src="./assets/images/books/art_fashion.jpg" alt="art-fashion">
-              </div>
-              <div class="modal-product__thumb">
-                <img src="./assets/images/books/broken_silence.jpg" alt="broken_silence">
-              </div>
-              <div class="modal-product__thumb">
-                <img src="./assets/images/books/fashion_fally.jpg" alt="fashion_fally">
-              </div>
-              <div class="modal-product__thumb">
-                <img src="./assets/images/books/one_year_one_a_bike.jpg" alt="one_year_one_a_bike">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="modal-product__content">
-              <div class="modal-product__title">cup cake diraes</div>
-              <div class="modal-product__price">$20.50</div>
-              <div class="modal-product__description">
-                <div class="modal-product__status">
-                  <span class="modal-product__status--icon"><i class="icon_check"></i></span>
-                  <span>In stock</span>
-                </div>
-                <div class="modal-product__details">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                  Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur.
-                </div>
-                <div class="modal-product__cart">
-                  <input type="text" class="modal-product__amount" value="1">
-                  <a href="#" class="modal-product__add">Add to cart</a>
-                  <a href="#" class="modal-product__wishlist"><i class="icon_heart_alt"></i></a>
-                </div>
-              </div>
-              <div class="modal-product__others">
-                <div class="modal-product__categories">
-                  <span>Categories:</span>
-                  <a href="#" class="modal-product__link">Horror</a>
-                  ,
-                  <a href="#" class="modal-product__link">Sandal</a>
-                </div>
-                <div class="modal-product__tags">
-                  <span>Tags:</span>
-                  <a href="#" class="modal-product__link">Kids</a>
-                  ,
-                  <a href="#" class="modal-product__link">Men</a>
-                  ,
-                  <a href="#" class="modal-product__link">Trend</a>
-                  ,
-                  <a href="#" class="modal-product__link">Woman</a>
-                </div>
-                <div class="modal-product__social">
-                  <span>Share:</span>
-                  <a href="#" class="modal-product__link modal-product__link--social">
-                    <i class="social_facebook"></i>
-                  </a>
-                  <a href="#" class="modal-product__link modal-product__link--social">
-                    <i class="social_twitter"></i>
-                  </a>
-                  <a href="#" class="modal-product__link modal-product__link--social">
-                    <i class="social_linkedin"></i>
-                  </a>
-                  <a href="#" class="modal-product__link modal-product__link--social">
-                    <i class="social_googleplus"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- MODAL PRODUCT ADD SUCCESS -->
-    <section class="modal-added">
-      <span>Product added!</span>
-    </section>
-  </aside>
-
+  
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
