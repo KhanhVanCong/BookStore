@@ -69,5 +69,23 @@
     @include responsive(average-laptop) {
       padding-right: 2rem;
     }
+
+    &--circle {
+      display: inline-block;
+      font-size: 1.4rem;
+      width: 3rem;
+      color: $grey-light;
+      height: 3rem;
+      border: 1px solid $line-border-color;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 2rem;
+
+      &:hover {
+        color: $light-gray-color;
+        background-color: $pink-color;
+        border-color: $pink-color;
+      }
+    }
   }
 }

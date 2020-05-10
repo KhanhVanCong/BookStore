@@ -1,0 +1,46 @@
+.block-box {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $line-border-color;
+  margin-bottom: 5rem;
+}
+
+.block {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: .8rem;
+  }
+  &:hover &__layer {
+    span {
+      background: $pink-color;
+    }
+  }
+
+  &__two-three--long .layer > span:last-child {
+    width: 30px;
+  }
+  
+  &__layer {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 0.1rem;
+    }
+    span {
+      display: block;
+      width: 0.5rem;
+      height: 0.5rem;
+      background: $grey-light;
+      margin-right: 0.1rem;
+    }
+  }
+
+  &--active &__layer {
+    span {
+      background: $pink-color;
+    }
+  }
+  &--two-two-long &__layer {
+    span:last-child {
+      width: 1.5rem;
+    }
+  }
+}

@@ -53,12 +53,36 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    &--small {
+      width: 80%;
+    }
   }
 
   &__thumb {
     transition: all .5s;
     &:hover {
       transform: scale(1.1);
+    }
+  }
+
+  &__profile {
+    width: 95%;
+    float: right;
+  }
+
+  &__info {
+    &--primary {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: $dark-color;
+      text-transform: capitalize;
+      min-width: 15rem;
+    }
+
+    &--secondary {
+      font-size: 1.5rem;
+      color: $dark-gray-color;
     }
   }
 }
