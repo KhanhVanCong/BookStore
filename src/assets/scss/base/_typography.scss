@@ -41,6 +41,11 @@ h5 {
   font-family: $muli;
   font-weight: 300;
   color: $grey-light;
+
+  &--medium {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
 }
 
 .author__published {
