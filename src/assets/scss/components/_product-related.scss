@@ -14,5 +14,9 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid $line-border-color;
     margin-bottom: 5rem;
+
+    @include responsive(large-mobile) {
+      justify-content: flex-end;
+    }
   }
 }

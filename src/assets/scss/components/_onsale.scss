@@ -38,6 +38,17 @@
 
   &__book-link {
     position: relative;
+    text-transform: capitalize;
+
+    &:hover::after {
+      content: "";
+      display: block;
+      width: 100%;
+      position: absolute;
+      margin-top: 2rem;
+      border-bottom: 2px solid $pink-color;
+      box-shadow: 0 2px 5px 0 rgba(248, 109, 114, 0.75);
+    }
 
     &--active {
       color: $pink-color;

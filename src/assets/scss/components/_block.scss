@@ -1,23 +1,29 @@
 .block {
   display: inline-block;
+
   &:not(:last-child) {
-    margin-right: .8rem;
+    margin-right: 0.8rem;
   }
-  &:hover &__layer {
-    span {
-      background: $pink-color;
+
+  &__box {
+    flex-grow: 1;
+
+    @include responsive(tablet) {
+      visibility: hidden;
+    }
+
+    @include responsive(small-mobile) {
+      display: none;
     }
   }
 
-  &__two-three--long .layer > span:last-child {
-    width: 30px;
-  }
-  
   &__layer {
     display: flex;
+
     &:not(:last-child) {
       margin-bottom: 0.1rem;
     }
+
     span {
       display: block;
       width: 0.5rem;
@@ -32,9 +38,20 @@
       background: $pink-color;
     }
   }
+
+  &__two-three--long .layer > span:last-child {
+    width: 30px;
+  }
+
   &--two-two-long &__layer {
     span:last-child {
       width: 1.5rem;
+    }
+  }
+
+  &:hover &__layer {
+    span {
+      background: $pink-color;
     }
   }
 }

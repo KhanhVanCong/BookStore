@@ -53,13 +53,23 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+
     &--small {
       width: 80%;
+
+      @include responsive(tablet) {
+        width: 100%;
+      }
+
+      @include responsive(large-mobile) {
+        width: 50%;
+      }
     }
   }
 
   &__thumb {
-    transition: all .5s;
+    transition: all 0.5s;
+
     &:hover {
       transform: scale(1.1);
     }
@@ -68,6 +78,10 @@
   &__profile {
     width: 95%;
     float: right;
+
+    @include responsive(large-mobile) {
+      margin-top: 5rem;
+    }
   }
 
   &__info {
