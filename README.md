@@ -4,7 +4,7 @@
 - __Book store is project which clone design from website https://wpbingosite.com to practive frontend (NonCommercial - just to learn)
 to practice How to use gulp, sass , jquery, github and responsive website.__
 ## Demo
-- __https://book-store.khanhvancong.me__
+- __http://book-store.khanhvancong.me__
 ## How to setup project to develop.
 - __Clone this project to your PC.__
 - __Install Gulp and Go to source folder then run command: ```gulp buildApp``` to build frontend__
