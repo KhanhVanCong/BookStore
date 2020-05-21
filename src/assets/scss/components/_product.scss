@@ -206,4 +206,48 @@
       }
     }
   }
+
+  &__item {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: $grey-light;
+    padding: 1rem 0;
+  }
+
+  &__children {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 3rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__arrow-icon {
+    &::before {
+      content: "\f106";
+      font-family: FontAwesome;
+      padding: 0 0.3rem;
+      font-size: 1.5rem;
+      color: $grey-light;
+      float: right;
+      cursor: pointer;
+    }
+  }
+
+  &__parent {
+    &--show {
+      & > a {
+        color: $pink-color;
+      }
+
+      .product__children {
+        max-height: 50rem;
+      }
+
+      .product__arrow-icon {
+        &::before {
+          content: "\f107";
+        }
+      }
+    }
+  }
 }

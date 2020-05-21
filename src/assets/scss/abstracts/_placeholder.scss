@@ -2,3 +2,9 @@
   outline: none;
   background-color: $gray-color;
 }
+
+%hoverActive {
+  background-color: $pink-color;
+  border-color: $pink-color;
+  color: $light-gray-color;
+}

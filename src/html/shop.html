@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Shop - Book Stores</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="height=device-height, minimum-scale=1, width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Begin Vendors CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Muli%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C700%2C700i%7CMerriweather%3A300%2C300i%2C400%2C400i%2C700%2C700i%2C900%2C900i%7COpen%2BSans&subset=latin%2Clatin-ext">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:700%7CMuli:700%2C600">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./assets/fonts/elegant-fonts.css">
+  <!-- End Vendors CSS -->
+
+  <link rel="stylesheet" href="./assets/css/main.min.css">
+</head>
+
+<body>
+  <!-- LOADING -->
+  <div class="loading loading--active js-loading">
+    <div class="loading__wrapper">
+      <div class="loading__dot">
+      </div>
+    </div>
+  </div>
+  <!-- MOVE TOP -->
+  <button id="back-top">
+    <i class="fa fa-angle-up"></i>
+  </button>
+
+  @@include('./common/navbar.html')
+
+  <main>
+    <!-- BREADCUMB -->
+    <section class="section-breadcumb">
+      <div class="breadcumb">
+        <h5 class="heading-primary">shop</h5>
+        <ul class="breadcumb__list">
+          <li class="breadcumb__item"><a href="#">home</a></li>
+          <li class="breadcumb__item"><a href="#">shop</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- END BREADCUMB -->
+    <section class="section-shop">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-3 order-2 order-xl-1">
+            <div class="search">
+                <form>
+                    <div class="search__form">
+                      <input type="text" class="search__input" placeholder="Search...">
+                      <button type="submit" class="search__btn">
+                        <i class="fa fa-search icon__big"></i>
+                      </button>
+                  </div>
+                </form>
+            </div>
+            <div class="categories">
+              <div class="common__title common__title--tag">
+                categories
+              </div>
+              <ul class="product__categories">
+                <li class="product__item">
+                  <a href="#">business</a>
+                  <span class="product__count">(3)</span>
+                </li>
+                <li class="product__item">
+                  <a href="#">classic</a>
+                  <span class="product__count">(7)</span>
+                </li>
+                <li class="product__item">
+                  <a href="#">drama</a>
+                  <span class="product__count">(2)</span>
+                </li>
+                <li class="product__item product__parent product__parent--show">
+                  <span class="product__arrow-icon"></span>
+                  <a href="#">for kid</a>
+                  <span class="product__count">(3)</span>
+                  <ul class="product__children">
+                    <li  class="product__item">
+                      <a href="#">sandal</a>
+                      <span class="product__count">(3)</span>
+                    </li>
+                    <li  class="product__item">
+                      <a href="#">shoes</a>
+                      <span class="product__count">(3)</span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="product__item">
+                  <a href="#">horror</a>
+                  <span class="product__count">(16)</span>
+                </li>
+                <li class="product__item">
+                  <a href="#">loved</a>
+                  <span class="product__count">(1)</span>
+                </li>
+              </ul>
+            </div>
+            <div class="price">
+              <div class="common__title common__title--tag">
+                price
+              </div>
+              <div class="range-slider"></div>
+              <div class="range-slider__output">
+                <span>Range: <span id="min"></span> - <span id="max"></span></span>
+              </div>
+            </div>
+            <div class="author">
+              <div class="common__title common__title--tag">
+                authors
+              </div>
+              <ul class="author__filter">
+                <li class="d-flex align-items-center py-3">
+                  <span class="checkbox--square"><input type="checkbox" value="" name="" id="anna-hillton" class="d-none"></span>
+                  <label class="checkbox__label" for="anna-hillton">anna hillton(3)</label>
+                </li>
+                <li class="d-flex align-items-center py-3">
+                  <span class="checkbox--square"><input type="checkbox" value="" name="" id="anna-hillton" class="d-none"></span>
+                  <label class="checkbox__label" for="anna-hillton">anna hilltons(4)</label>
+                </li>
+                <li class="d-flex align-items-center py-3">
+                  <span class="checkbox--square"><input type="checkbox" value="" name="" id="anna-hillton" class="d-none"></span>
+                  <label class="checkbox__label" for="anna-hillton">coco simon(2)</label>
+                </li>
+                <li class="d-flex align-items-center py-3">
+                  <span class="checkbox--square"><input type="checkbox" value="" name="" id="anna-hillton" class="d-none"></span>
+                  <label class="checkbox__label" for="anna-hillton">Nicolas Sumpir(3)</label>
+                </li>
+                <li class="d-flex align-items-center py-3">
+                  <span class="checkbox--square"><input type="checkbox" value="" name="" id="anna-hillton" class="d-none"></span>
+                  <label class="checkbox__label" for="anna-hillton">Sabela Hupter(7)</label>
+                </li>
+                <li class="d-flex align-items-center py-3">
+                  <span class="checkbox--square"><input type="checkbox" value="" name="" id="anna-hillton" class="d-none"></span>
+                  <label class="checkbox__label" for="anna-hillton">Susan Merrlin(4)</label>
+                </li>
+              </ul>
+            </div>
+            <div class="image u-margin-top-2-5rem">
+              <a href="#">
+                <img class="card-img-top image__item" src="./assets/images/shop/Image-1-2.jpg" alt="sale-off">
+              </a>
+            </div>
+            <div class="tag">
+              <div class="common__title common__title--tag">
+                tags
+              </div>
+              <div class="tag__cloud">
+                <a href="#" class="tag__link paragraph">classic</a>
+                <a href="#" class="tag__link paragraph">horror</a>
+                <a href="#" class="tag__link paragraph">kids</a>
+                <a href="#" class="tag__link paragraph">men</a>
+                <a href="#" class="tag__link paragraph">trend</a>
+                <a href="#" class="tag__link paragraph">woman</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-9 order-1 order-xl-2">
+            <div class="related__top-bar mt-3">
+              <div class="block__box">
+                <a href="#" class="block block--two-three">
+                  <span class="block__layer block__layer--first">
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span class="block__layer block__layer--middle">
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span class="block__layer block__layer--last">
+                    <span></span>
+                    <span></span>
+                  </span>
+                </a>
+                <a href="#" class="block block--three-three">
+                  <span class="block__layer block__layer--first">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span class="block__layer block__layer--middle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span class="block__layer block__layer--last">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </a>
+                <a href="#" class="block block--four-three block--active">
+                  <span class="block__layer block__layer--first">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span class="block__layer block__layer--middle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span class="block__layer block__layer--last">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </a>
+                <a href="#" class="block block--two-two-long">
+                  <span class="block__layer block__layer--first">
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span class="block__layer block__layer--middle">
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span class="block__layer block__layer--last">
+                    <span></span>
+                    <span></span>
+                  </span>
+                </a>
+              </div>
+              <div class="filter__showing">
+                <span class="paragraph paragraph--medium">Showing: </span>
+                <div class="dropdown">
+                  <span class="filter__dropdown paragraph paragraph--medium dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">12</span>
+                  <div class="filter__menu dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="filter__item filter--active dropdown-item" type="button">12</button>
+                    <button class="filter__item dropdown-item" type="button">24</button>
+                    <button class="filter__item dropdown-item" type="button">26</button>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__divided"></div>
+              <div class="filter__showing">
+                <div class="dropdown">
+                  <span class="filter__dropdown paragraph paragraph--medium dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown">default sorting</span>
+                  <div class="filter__menu dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="filter__item filter--active dropdown-item" type="button">default sorting</button>
+                    <button class="filter__item dropdown-item" type="button">Sort by popularity</button>
+                    <button class="filter__item dropdown-item" type="button">Sort by average rating</button>
+                    <button class="filter__item dropdown-item" type="button">Sort by latest</button>
+                    <button class="filter__item dropdown-item" type="button">Sort by price: low to high</button>
+                    <button class="filter__item dropdown-item" type="button">Sort by price: high to low</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/castle_in_the_sky.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/fashion_fally.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/100_selected_poem.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/a_thousand_seed.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/africa_rising.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/broken_silence.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/cup_cake_1.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/cup_cake_2.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/delicious_places.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/insprision_speaker.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/surf_odyssey.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/delicious_places.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/the_still_life.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/castle_in_the_sky.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/sad_eyes_and_brave_hearts.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/insprision_speaker.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/one_year_one_a_bike.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/fashion_fally.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/onece_upon_a_reunion.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/fashion_fally.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/life_you_are_being_fair.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/fashion_fally.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="related__wrapper">
+                  <div class="related__books books">
+                    <div class="related__thumb-wrapper books__thumb">
+                      <div class="related__thumb books__thumb--front">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/fashion_fally.jpg" alt="castle_in_the_sky">
+                        </a>
+                      </div>
+                      <div class="related__thumb books__thumb--behind">
+                        <a href="http://google.com" target="_blank">
+                          <img src="./assets/images/books/cup_cake_2.jpg" alt="fashion_fally">
+                        </a>
+                      </div>
+                      <div class="books__modules">
+                        <a href="#" class="books__cart">
+                          <i class="icon_cart_alt"></i>
+                        </a>
+                        <a href="#" class="books__quick-view">
+                          <i class='icon_search'></i>
+                        </a>
+                        <a href="#" class="books__wish-list">
+                          <i class="icon_heart_alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="books__details">
+                      <a href="http://google.com" target="_blank" class="books__title">The Castle in the
+                        sky</a>
+                      <div class="books__author">
+                        by <a href="#" class="books__author--hover">anna hillton</a>
+                      </div>
+                      <div class="books__price">$20.5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination-box">
+              <ul class="pagination">
+                <li class="pagination__item">
+                  <span class="pagination__link pagination--active">1</span>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination--next" href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER  -->
+  @@include('./common/footer.html')
+  <!-- FOOTER  -->
+
+  <!-- MODAL PRODUCT -->
+  <aside>
+    <section class="modal modal-product" id="modal-product-content">
+      <div class="container-fluid modal-product__container">
+        <div class="row">
+          <div class="col-6 col-md-4 col-md-6">
+            <div class="modal-product__wrapper js-modal-product__carousel">
+              <div class="modal-product__thumb">
+                <img src="./assets/images/books/art_fashion.jpg" alt="art-fashion">
+              </div>
+              <div class="modal-product__thumb">
+                <img src="./assets/images/books/broken_silence.jpg" alt="broken_silence">
+              </div>
+              <div class="modal-product__thumb">
+                <img src="./assets/images/books/fashion_fally.jpg" alt="fashion_fally">
+              </div>
+              <div class="modal-product__thumb">
+                <img src="./assets/images/books/one_year_one_a_bike.jpg" alt="one_year_one_a_bike">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-md-6">
+            <div class="modal-product__content">
+              <div class="modal-product__title">cup cake diraes</div>
+              <div class="modal-product__price">$20.50</div>
+              <div class="modal-product__description">
+                <div class="modal-product__status">
+                  <span class="modal-product__status--icon"><i class="icon_check"></i></span>
+                  <span>In stock</span>
+                </div>
+                <div class="modal-product__details">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+                <div class="modal-product__cart">
+                  <input type="text" class="modal-product__amount" value="1">
+                  <a href="#" class="modal-product__add">Add to cart</a>
+                  <a href="#" class="modal-product__wishlist"><i class="icon_heart_alt"></i></a>
+                </div>
+              </div>
+              <div class="modal-product__others">
+                <div class="modal-product__categories">
+                  <span>Categories:</span>
+                  <a href="#" class="modal-product__link">Horror</a>
+                  ,
+                  <a href="#" class="modal-product__link">Sandal</a>
+                </div>
+                <div class="modal-product__tags">
+                  <span>Tags:</span>
+                  <a href="#" class="modal-product__link">Kids</a>
+                  ,
+                  <a href="#" class="modal-product__link">Men</a>
+                  ,
+                  <a href="#" class="modal-product__link">Trend</a>
+                  ,
+                  <a href="#" class="modal-product__link">Woman</a>
+                </div>
+                <div class="modal-product__social">
+                  <span>Share:</span>
+                  <a href="#" class="modal-product__link modal-product__link--social">
+                    <i class="social_facebook"></i>
+                  </a>
+                  <a href="#" class="modal-product__link modal-product__link--social">
+                    <i class="social_twitter"></i>
+                  </a>
+                  <a href="#" class="modal-product__link modal-product__link--social">
+                    <i class="social_linkedin"></i>
+                  </a>
+                  <a href="#" class="modal-product__link modal-product__link--social">
+                    <i class="social_googleplus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODAL PRODUCT ADD SUCCESS -->
+    <section class="modal-added">
+      <span>Product added!</span>
+    </section>
+  </aside>
+  <!-- END MODAL PRODUCT-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="./assets/js/author-min.js"></script>
+  <script src="./assets/js/shop-min.js"></script>
+</body>
+
+</html>
