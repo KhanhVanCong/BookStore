@@ -2,7 +2,7 @@
 ![](https://github.com/KhanhVanCong/BookStore/blob/master/src/assets/images/review.png)
 ## Description:
 - __Book store is project which clone design from website https://wpbingosite.com to practive frontend (NonCommercial - just to learn)
-to practice How to use gulp, sass , jquery, github and responsive website.__
+and learn How to use gulp, sass , jquery, github and responsive website.__
 ## Demo
 - __http://book-store.khanhvancong.me__
 ## How to setup project to develop.
